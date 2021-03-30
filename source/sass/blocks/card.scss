@@ -1,0 +1,231 @@
+.card {
+  width: 238px;
+  padding: 0 10px 20px;
+  position: relative;
+  background-color: #fff;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 95%;
+    height: 1px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:#D4D4D4;
+  }
+  &:hover {
+    .hover-wrapper{
+      display: block;
+      opacity: 1;
+    }
+    .icon-wrapper {
+      opacity: 1;
+    }
+  }
+}
+
+// .card__wrapper {
+//   position: relative;
+// }
+
+.card-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.exist {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #009734;
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 5px;
+    fill: transparent;
+  }
+}
+
+.card-body__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.card-body__image {
+  max-width: 218px;
+  max-height: 218px;
+  width: 100%;
+  height: 100%;
+}
+
+.card-body__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #072952;
+  margin-bottom: 10px;
+}
+
+.price-value__old {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration-line: line-through;
+  color: #959595;
+  margin-bottom: 2px;
+}
+
+.price-value__new {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  color: #072952;
+}
+
+.price-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.block-count {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.block-count__input {
+  height: 36px;
+  width: 29px;
+  border: none;
+  border-left: 1px solid #D4D4D4;
+  border-right: 1px solid #D4D4D4;
+  text-align: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #072952;
+}
+
+.block-count__btn {
+  color: #D4D4D4;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card-widjet {
+  background: #009734;
+  box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 9.84777px 9.84777px;
+  width: 60px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #FFFFFF;
+  position: absolute;
+  top: -6px;
+  left: 15px;
+  &::before {
+    clip-path: polygon(5% 0,95% 0,100% 100%,0 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    content: '';
+    width: 66px;
+    height: 6px;
+    z-index: -1;
+    background-color:#00479B;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.hover-btn {
+  background: #FFFFFF;
+  border: 2px solid #00479B;
+  border-radius: 10px;
+  width: 214px;
+  height: 40px;
+  display: flex;
+  transition: all .4s;
+  justify-content: center;
+  align-items: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #00479B;
+  margin: 0 auto;
+  svg {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+.hover-wrapper {
+  position: absolute;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  transition: all .4s;
+  padding-bottom: 20px;
+  opacity: 0;
+  display: none;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+.icon-wrapper {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 50;
+  right: 5px;
+  top: 23px;
+}
+
+.icon-wrapper__btn {
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  svg {
+    fill: none;
+    stroke: #D4D4D4;
+  }
+}
+
+.like-btn {
+  svg {
+    fill: #D4D4D4;
+    stroke: none;
+  }
+}
+
+.like-btn--active {
+  background: linear-gradient(180deg, rgba(248, 87, 82, 0.8) 0%, rgba(179, 18, 23, 0.8) 107.14%);
+  svg {
+    fill: #fff;
+  }
+}
+

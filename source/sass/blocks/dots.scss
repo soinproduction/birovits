@@ -1,0 +1,27 @@
+
+.baner-slider__dots {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+  li {
+    width: 4px;
+    height: 4px;
+    background: #D4D4D4;
+    border-radius: 50%;
+    transition: all .4s;
+    button {
+      display: none;
+    }
+  }
+  li + li {
+    margin-left: 8px;
+  }
+  .slick-active {
+    width: 17px;
+    height: 4px;
+    background: #00479B;
+    border-radius: 2px;
+  }
+}

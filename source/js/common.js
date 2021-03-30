@@ -1,12 +1,62 @@
 
   $('.baner-slider').slick({
     accessibility: true,
-    arrows: true,
+    arrows: false,
     dots: true,
     speed: 1500,
-    dotsClass: "delivery-slider__dots",
-    prevArrow: '<div class="delivery-slider-left delivery-slider__button"><img src="img/chevron-left.svg" alt="Слайд"></div>',
-    nextArrow: '<div class="delivery-slider-right delivery-slider__button"><img src="img/chevron-right.svg" alt="Слайд"></div>',
+    dotsClass: "baner-slider__dots",
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
+        }
+      }
+    ]
+  });
+
+  $('.novelty-slider').slick({
+    accessibility: true,
+    arrows: true,
+    dots: false,
+    speed: 1500,
+    slidesToShow: 5,
+    arrows:true,
+    prevArrow: '<div class="novelty-slider-left novelty-slider__button"><img src="img/slider-left.svg" alt="Слайд"></div>',
+    nextArrow: '<div class="novelty-slider-right novelty-slider__button"><img src="img/slider-right.svg" alt="Слайд"></div>',
+    dotsClass: "baner-slider__dots",
     responsive: [
       {
         breakpoint: 1199,
@@ -57,8 +107,8 @@
       $status.text(i + '/' + slick.slideCount);
   });
 
-  $('.product-item__favorite').click(function () {
-    $(this).toggleClass('product-item__favorite-active')
+  $('.like-btn').click(function () {
+    $(this).toggleClass('like-btn--active')
   });
 
   var acc = document.getElementsByClassName("accordion");

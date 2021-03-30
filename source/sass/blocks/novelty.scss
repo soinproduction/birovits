@@ -1,0 +1,44 @@
+.novelty-sec {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.novelty-slider {
+  position: relative;
+}
+
+.novelty-slide {
+  outline: none;
+}
+
+.novelty-slide__wrapper {
+  padding: 6px 0 20px;
+  position: relative;
+}
+
+.novelty-slider__button {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  bottom: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all .4s;
+  &:hover {
+    background: rgba(212, 212, 212, 0.26);
+  }
+}
+
+.novelty-slider-right {
+  right: -45px;
+}
+
+.novelty-slider-left {
+  left: -45px;
+}

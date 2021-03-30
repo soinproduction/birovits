@@ -1,6 +1,146 @@
+.index-baner {
+  padding-top: 15px;
+}
+
+.baner-slider {
+  position: relative;
+}
+
 .baner-slide {
   background-image: url(../img/baner/Banner2.png);
   background-position: center;
-  background-size: contain;
-  min-height: 600px;
+  background-repeat: no-repeat;
+  background-color: #F9F9F9;
+  outline: none;
+
+}
+
+.baner-left {
+  padding-bottom: 38px;
+}
+
+.baner-left__sale {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #072952;
+  margin-bottom: 10px;
+}
+
+.baner-left__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 105%;
+  color: #00479B;
+  margin-bottom: 20px;
+}
+
+.baner-left__decr {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: #072952;
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+.baner-left__btn {
+  background: #00479B;
+  border-radius: 9px;
+  width: 179.06px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  color: #FFFFFF;
+  svg {
+    fill: currentColor;
+    margin-right: 5px;
+  }
+}
+
+.baner-slide__wrapp {
+  display: flex;
+  justify-content: space-between;
+  padding: 68px 0 50px;
+  position: relative;
+  &:last-child {
+    align-items: flex-end;
+  }
+  &::before {
+    content:'';
+    position: absolute;
+    width: 390px;
+    height: 440px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../img/baner/slider-before.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: 10;
+  }
+}
+
+.baner-right {
+  margin-right: 80px;
+}
+
+.baner-right__box {
+  width: 323px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  padding: 141px 20px 15px;
+}
+
+.baner-right__img {
+  position: absolute;
+  top: -55%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.baner-right__title {
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 15.1095px;
+  line-height: 18px;
+  color: #072952;
+  margin-bottom: 4px;
+}
+
+.baner-right__decr {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.baner-right__link {
+  display: flex;
+  margin-left: auto;
+  width: fit-content;
+  align-items: flex-end;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12.951px;
+  color: #072952;
+  svg {
+    margin-left: 14px;
+  }
 }
