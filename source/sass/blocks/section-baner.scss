@@ -1,31 +1,35 @@
 .baner-big {
+  padding: 8px 52px 50px 0;
+
   background-image: url(../img/baner/baner-bg.png);
   background-repeat: no-repeat;
-  padding: 8px 52px 50px 0;
   background-size: cover;
   border-radius: 10px;
 }
 
 .baner-big__image {
-  margin-left: 8px;
-  margin-bottom: 25px;
-  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 161px;
   height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px 0px;
+  margin-bottom: 25px;
+  margin-left: 8px;
+
+  background-color: #ffffff;
+  border-radius: 20px 0;
 }
 
 .baner-big__text {
-  font-family: Rubik;
+  display: inline-block;
+  margin-left: 62px;
+
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #FFFFFF;
-  display: inline-block;
-  margin-left: 62px;
+  font-family: Rubik;
+  color: #ffffff;
+
   span {
     font-weight: bold;
     font-size: 24px;
@@ -34,42 +38,49 @@
 }
 
 .baner-big__title {
-  font-family: Rubik;
+  margin-bottom: 14px;
+
   font-style: normal;
   font-weight: 900;
   font-size: 64px;
   line-height: 64px;
-  color: #FFFFFF;
-  margin-bottom: 14px;
+  font-family: Rubik;
+  color: #ffffff;
 }
 
 .baner-big__descr {
-  font-family: Rubik;
+  position: relative;
+
+  margin-bottom: 66px;
+  padding-left: 62px;
+
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #FFFFFF;
-  padding-left: 62px;
-  position: relative;
-  margin-bottom: 66px;
+  font-family: Rubik;
+  color: #ffffff;
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
+    top: 8px;
+    left: 4px;
+
     width: 54px;
     height: 1px;
-    background-color: #fff;
-    left: 4px;
-    top: 8px;
+
+    background-color: #ffffff;
   }
 }
 
 .baner-link {
+  display: block;
   width: fit-content;
   margin-left: auto;
-  display: block;
+
   svg {
-    fill: #fff;
+    fill: #ffffff;
   }
 }
 
@@ -79,66 +90,76 @@
 }
 
 .baner-box__coll:first-child {
-  max-width: 768px;
   width: 100%;
+  max-width: 768px;
 }
 
 .baner-box__coll:last-child {
-  max-width: 368px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  max-width: 368px;
 }
 
 .baner-mini {
   min-height: 190px;
+  padding: 38px 33px 0 0;
+
   background-image: url(../img/baner/baner-bg2.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
-  padding: 38px 33px 0 0;
+
   &--mode {
-    background-image: url(../img/baner/baner-bg3.png);
     padding: 49px 32px 0 18px;
+
     text-align: left;
+
+    background-image: url(../img/baner/baner-bg3.png);
+
     .baner-mini__title {
-      font-family: Rubik;
+      margin-bottom: 40px;
+
       font-style: normal;
       font-weight: 900;
       font-size: 19.2762px;
       line-height: 96%;
-      color: #FFFFFF;
-      margin-bottom: 40px;
+      font-family: Rubik;
+      color: #ffffff;
+
       span {
         text-transform: uppercase;
       }
     }
-
   }
 }
 
 .baner-mini__wrapper {
-  margin-left: auto;
   width: fit-content;
-  text-align: center;
-  margin-bottom: 20px;
   margin-right: 30px;
+  margin-bottom: 20px;
+  margin-left: auto;
+
+  text-align: center;
+
   .baner-mini__title {
-    font-family: Rubik;
     font-style: normal;
     font-weight: 900;
     font-size: 36.8px;
     line-height: 96%;
-    color: #FFFFFF;
-  }
-  .baner-mini__text {
     font-family: Rubik;
+    color: #ffffff;
+  }
+
+  .baner-mini__text {
     font-style: normal;
     font-weight: normal;
     font-size: 19.2762px;
     line-height: 96%;
-    color: #FFFFFF;
+    font-family: Rubik;
+    color: #ffffff;
+
     span {
       font-weight: 900;
       font-size: 21.0286px;
@@ -146,4 +167,3 @@
     }
   }
 }
-

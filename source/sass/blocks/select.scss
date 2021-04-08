@@ -1,9 +1,11 @@
 .select__header {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
   position: relative;
   z-index: 5;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
 }
 
 .select.is-active .select__body {
@@ -21,24 +23,28 @@
   .select__icon__arrow {
     transform: scaleY(-1);
   }
+
   .select__body {
-    display: block;
     position: absolute;
-    padding: 2px 5px;
-    background-color: #FFFFFF;
-    border: 1px solid #C7D1DD;
+    z-index: 10;
+
+    display: block;
     margin-top: 5px;
+    padding: 2px 5px;
+
+    background-color: #ffffff;
+    border: 1px solid #c7d1dd;
     border-radius: 10px;
     cursor: pointer;
-    z-index: 10;
   }
 }
 
-.header-lang .select__current, .select__item {
-  font-family: Rubik;
+.header-lang .select__current,
+.select__item {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
+  font-family: Rubik;
   color: #959595;
 }

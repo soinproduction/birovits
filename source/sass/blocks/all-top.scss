@@ -1,30 +1,33 @@
 .all-top {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 30px;
 }
 
 .all-top__title {
-  font-family: Rubik;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
+  font-family: Rubik;
   color: #072952;
 }
 
 .all-top__link {
-  font-family: Rubik;
+  display: flex;
+  align-items: center;
+
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  font-family: Rubik;
   color: #072952;
-  display: flex;
-  align-items: center;
+
   svg {
-    fill: currentColor;
     margin-left: 6px;
+
+    fill: currentColor;
   }
 }
