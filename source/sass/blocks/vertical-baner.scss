@@ -1,0 +1,44 @@
+.vertical-baner {
+  height: 100%;
+  width: 270px;
+  background-image: url(../img/baner/vertical-baner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 0px 31px 23px 23px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.25));
+}
+
+.vertical-baner__title {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #FFFFFF;
+  span {
+   max-width:149px;
+  }
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.vertical-baner__link {
+  padding-top: 4%;
+  color: #FFFFFF;
+  svg {
+    fill: currentColor;
+  }
+}
+
+.vertical-baner__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
