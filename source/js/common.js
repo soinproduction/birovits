@@ -11,7 +11,6 @@ const Sliders = {
       nextArrow: '<div class="novelty-slider-right novelty-slider__button"><img src="img/slider-right.svg" alt="Слайд"></div>',
       dotsClass: "baner-slider__dots",
       responsive: [{
-        {
           breakpoint: 1150,
           settings: {
             slidesToShow: 2,
