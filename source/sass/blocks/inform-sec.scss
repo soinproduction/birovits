@@ -1,4 +1,9 @@
-.inform-slider {
+.inform-slider--flex {
   display: flex;
   justify-content: space-between;
+}
+
+.inform-slide__wrapp {
+  max-width: 270px;
+
 }
