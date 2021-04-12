@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  z-index: 1000;
+
 
   width: 238px;
   padding: 0 10px 20px;
@@ -21,9 +21,10 @@
   }
 
   &:hover {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     .hover-wrapper {
       display: block;
-
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
       opacity: 1;
     }
 

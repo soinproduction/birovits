@@ -1,0 +1,29 @@
+.blog-sec {
+  padding-bottom: 128px;
+}
+
+.blog__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__row + .blog__row{
+  margin-top: 30px;
+}
+
+.blog-item {
+  .inform-slide__wrapp {
+    max-width: 370px;
+    width: 100%;
+  }
+}
+
+.blog-item--big {
+  .inform-slide__wrapp {
+    max-width: 570px;
+    width: 100%;
+    .inform-slide__img {
+      width: 100%;
+    }
+  }
+}

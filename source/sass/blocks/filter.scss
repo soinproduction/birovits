@@ -1,0 +1,47 @@
+
+.filter-list__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  padding: 12px 16px;
+  border-top: 1px solid #D4D4D4;
+}
+
+.filter-list__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(7, 41, 82, 0.8);
+}
+
+.filter-list__button.accordion--active {
+
+  svg {
+    transition: all .4s;
+    transform: scaleY(-1);
+  }
+}
+
+.filter-list__body {
+  padding: 20px 0;
+
+}
+
+.filter-list__item:first-child {
+  .filter-list__button {
+    border: none;
+  }
+}
+
+.filter-list__brand {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.filter-list__image {
+  margin-bottom: 20px;
+}

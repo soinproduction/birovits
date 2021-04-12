@@ -1,0 +1,86 @@
+.breadcrums-sec {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.breadcrums-list {
+  display: flex;
+}
+
+.breadcrums {
+  margin-bottom: 30px;
+}
+
+.breadcrums-list__link {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #959595;
+  svg {
+    fill: currentColor;
+    margin-left: 6px;
+  }
+}
+
+.breadcrums-list__span {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #00479B;
+}
+
+.breadcrums-list__item + .breadcrums-list__item {
+  margin-left: 6px;
+}
+
+.page-top__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.page-top__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #072952;
+}
+
+.page-top__value {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #959595;
+}
+
+.page-top__descr {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #394452;
+}
+
+.header-center--mode {
+  max-width: 270px;
+  width: 100%;
+}
+
+.page-top__left {
+  display: flex;
+  align-items: center;
+}
+
+.header-center--mode + .blog-select {
+  margin-left: 73px;
+}

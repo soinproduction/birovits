@@ -1,34 +1,101 @@
-.select__header {
+.select {
   position: relative;
-  z-index: 5;
-
-  display: flex;
-  align-items: center;
-
-  cursor: pointer;
 }
 
 .select.is-active .select__body {
-  // max-height: 500px;
+  max-height: 500px;
   height: auto;
 }
 
-.select {
+.select.is-active {
+  .select__header {
+    border-color: #00479B;
+    border-radius: 2px 2px 0 0;
+  }
+  .select__icon {
+    transform: scaleY(-1);
+  }
   .select__body {
-    display: none;
+    display: block;
   }
 }
 
-.header-lang .select.is-active {
-  .select__icon__arrow {
-    transform: scaleY(-1);
-  }
+.select__header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 220px;
+  transition: all .4s;
+  background: #FFFFFF;
+  border: 2px solid #D4D4D4;
+  border-radius: 2px;
+  padding: 0 16px;
+}
 
+.select__current {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(149, 149, 149, 0.8);
+}
+
+.select__icon {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  height: 40px;
+  margin-left: auto;
+  text-align: center;
+  width: 40px;
+}
+
+.select__body {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  border: 2px solid #00479B;
+  border-top: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 2px 2px;
+}
+
+.select__item {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #072952;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.select__wrapp {
+  background-color: #fff;
+  width: 100%;
+}
+
+.select__item:hover {
+  background-color: #00479B;
+  color: #fff;
+}
+
+
+
+.header-lang {
+  .select__header {
+    border: none;
+    width: auto;
+    padding: 0;
+  }
   .select__body {
     position: absolute;
     z-index: 10;
 
-    display: block;
     margin-top: 5px;
     padding: 2px 5px;
 
@@ -37,14 +104,27 @@
     border-radius: 10px;
     cursor: pointer;
   }
+  .select__current,
+  .select__item {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: Rubik;
+    color: #959595;
+    padding: 5px 4px;
+    &:hover {
+      background-color: rgb(255, 255, 255);
+      color: #1d7ef5;
+    }
+  }
+
+
 }
 
-.header-lang .select__current,
-.select__item {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-  font-family: Rubik;
-  color: #959595;
-}
+
+
+
+
+
+
