@@ -7,21 +7,22 @@
   justify-content: space-between;
 }
 
-.blog__row + .blog__row{
+.blog__row + .blog__row {
   margin-top: 30px;
 }
 
 .blog-item {
   .inform-slide__wrapp {
-    max-width: 370px;
     width: 100%;
+    max-width: 370px;
   }
 }
 
 .blog-item--big {
   .inform-slide__wrapp {
-    max-width: 570px;
     width: 100%;
+    max-width: 570px;
+
     .inform-slide__img {
       width: 100%;
     }
