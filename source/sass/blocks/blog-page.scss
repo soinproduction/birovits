@@ -1,18 +1,20 @@
 .useful {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #D4D4D4;
   margin-bottom: 30px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #d4d4d4;
 }
 
 .useful-top {
-  min-height: 235px;
   width: 100%;
-  background-image: url(../img/useful-bg.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 235px;
   margin-bottom: 30px;
-  border-radius: 10px 10px 0px 0px;
+
+  background-image: url(../img/useful-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 .useful-box {
@@ -21,31 +23,35 @@
 }
 
 .useful-box__item {
-  max-width: 870px;
   width: 100%;
+  max-width: 870px;
 }
 
 .useful-box__image {
   width: 100%;
   min-height: 323px;
-  background-repeat: no-repeat;
-  background-image: url(../img/useful-bg2.png);
-  background-size: cover;
-  background-position: center center;
-  border-radius: 10px 10px 0px 0px;
   margin-bottom: 50px;
+
+  background-image: url(../img/useful-bg2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 .useful-box-text {
   margin-bottom: 50px;
-  font-family: Rubik;
+
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #4F4F4F;
+  font-family: Rubik;
+  color: #4f4f4f;
+
   &--mode {
     margin-bottom: 25px;
+
     &:last-of-type {
       margin-bottom: 80px;
     }
@@ -54,24 +60,25 @@
 
 .useful-aside {
   padding-top: 20px;
+
   .card {
     margin-top: 30px;
   }
 }
 
 .useful-aside__title {
-  font-family: Rubik;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
+  font-family: Rubik;
   color: #072952;
 }
 
 .block-share__title {
-  font-family: Rubik;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
+  font-family: Rubik;
   color: #000000;
 }
 
@@ -83,10 +90,3 @@
 .block-share__link {
   margin-left: 20px;
 }
-
-
-
-
-
-
-

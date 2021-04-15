@@ -1,0 +1,118 @@
+.brand-sec--about {
+  padding-top: 125px;
+  padding-bottom: 30px;
+}
+
+
+.about-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+}
+
+.about-inner__image {
+  max-width: 570px;
+  max-height: 420px;
+}
+
+.about-inner__wrapp {
+  max-width: 570px;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.about-inner__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #072952;
+  margin-bottom: 40px;
+  &--big{
+    font-size: 26px;
+  }
+  &--dark {
+    color: #000000;
+  }
+}
+
+.about-inner__text {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #072952;
+  &--dark {
+    color: #000000;
+  }
+}
+
+.about-inner__brands {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.about-inner__brand {
+  width: 169px;
+  height: 97px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  box-shadow: 0px 5.04023px 5.04023px rgba(0, 0, 0, 0.1);
+  border-radius: 5.04023px;
+  margin-bottom: 30px;
+}
+
+.about-inner__more {
+  margin: 0 auto;
+  width: 270px;
+  height: 40px;
+  background: #00479B;
+  border: 2px solid #00479B;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    margin-left: 10px;
+    fill: currentColor;
+  }
+}
+
+.about-clients__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+}
+
+.about-clients__item {
+  margin-bottom: 15px;
+}
+
+.about-clients__text {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
