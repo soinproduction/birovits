@@ -322,8 +322,8 @@ if (catalogBody !== null) {
 
 $(".polzunok-5").slider({
   min: 0,
-  max: 5000,
-  values: [50, 520],
+  max: 500,
+  values: [100, 300],
   range: true,
   animate: "fast",
   slide : function(event, ui) {
