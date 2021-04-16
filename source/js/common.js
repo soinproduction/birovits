@@ -306,7 +306,7 @@ for (const accordion of accordionList) {
 
 // -----------------  Лайк  --------------------
 const likeButtonsAll = document.querySelectorAll('.like-btn');
-const catalogBody = document.querySelector(".catalog-body");
+const catalogBody = document.querySelector(".whish-favorire");
 
 [...likeButtonsAll].map((button) => button.addEventListener('click', function () {
   this.classList.toggle('like-btn--active');
@@ -366,4 +366,27 @@ $(".polzunok-container-5 input").change(function() {
   if (input_right != where_right) {
       $(".polzunok-5").slider("values", 1, input_right);
   }
+});
+
+
+$('body').on('click', '.password-control', function(){
+	if ($('#password-input').attr('type') == 'password'){
+		$(this).addClass('view');
+		$('#password-input').attr('type', 'text');
+	} else {
+		$(this).removeClass('view');
+		$('#password-input').attr('type', 'password');
+	}
+	return false;
+});
+
+$('body').on('click', '.password-control2', function(){
+	if ($('#password-input2').attr('type') == 'password'){
+		$(this).addClass('view');
+		$('#password-input2').attr('type', 'text');
+	} else {
+		$(this).removeClass('view');
+		$('#password-input2').attr('type', 'password');
+	}
+	return false;
 });

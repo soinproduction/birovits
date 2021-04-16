@@ -1,0 +1,384 @@
+.reg-sec {
+  padding: 50px 0 200px;
+}
+
+.login-sec {
+  padding: 70px 0 100px;
+}
+
+.center-reg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reg-thanks__icon {
+  margin-bottom: 30px;
+}
+
+.reg-thanks__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #072952;
+  margin-bottom: 30px;
+}
+
+.reg-thanks__text  {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #072952;
+  text-align: center;
+}
+
+.reg-thanks {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.regestration {
+  max-width: 370px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.regestration-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.regestration-top__logo {
+  width: 100px;
+  height: 55px;
+  margin-bottom: 20px;
+}
+
+.regestration-top__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #072952;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.regestration-form__icon {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.regestration-form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.regestration-form__input {
+  background: #FFFFFF;
+  border: 1px solid #D4D4D4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 48px;
+  padding: 0 16px;
+  &::placeholder {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(149, 149, 149, 0.8);
+  }
+}
+
+.regestration-form__label {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.regestration-form__label--done {
+  .regestration-form__input {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: none;
+    user-select: none;
+    &::placeholder {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: rgba(7, 41, 82, 0.8);
+    }
+  }
+  .regestration-form__icon {
+    display: block;
+  }
+}
+
+.forgot-pass {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #072952;
+  &--mode {
+    text-decoration-line: underline;
+    margin-top: 10px;
+  }
+}
+
+.sign-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.forget-me {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  color: #959595;
+}
+
+.check-wrapp__btn {
+  width: 140px;
+  height: 40px;
+  background: #00479B;
+  border: 2px solid #00479B;
+  box-sizing: border-box;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.sign-for {
+  max-width: 212px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.regestration-title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #072952;
+  margin-bottom: 20px;
+}
+
+.bottom-link {
+  width: 100%;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.reg-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reg-container {
+  max-width: 770px;
+  width: 100%;
+}
+
+.main-aside {
+  width: 100%;
+  max-width: 370px;
+}
+
+.reg-container__buttons {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 30px;
+  border-radius: 10px;
+}
+
+.reg-container__btn {
+  max-width: 284.5px;
+  width: 100%;
+  height: 61px;
+  padding-left: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  text-align: left;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #072952;
+  &:first-of-type {
+    border-radius: 10px 0 0 10px;
+  }
+  &:last-of-type {
+    border-radius: 0 10px 10px 0;
+  }
+  &--active {
+    background: #00479B;
+    color: #FFFFFF;
+  }
+}
+
+.account-create {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.acount-create__label {
+  width: 48%;
+  position: relative;
+  margin-bottom: 20px;
+  &--min {
+    width: 31%;
+  }
+}
+
+.acount-create__input {
+  position: relative;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #D4D4D4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 0 16px;
+  width: 100%;
+  &::placeholder {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(149, 149, 149, 0.8);
+  }
+  &--red {
+    border: 1px solid #FF0000;
+  }
+  &--mode {
+    &::placeholder {
+      transform: translateY(-22%);
+      text-align: left;
+    width: 70%;
+    white-space: pre-wrap;
+    }
+  }
+}
+
+.acount-create__legend {
+  position: absolute;
+  left: 20px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #072952;
+  opacity: 0.8;
+  z-index: 5;
+  top: -10%;
+  display: none;
+}
+
+.acount-create__icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.acount-create__label--done {
+
+  .acount-create__input {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: none;
+    &::placeholder {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: rgba(7, 41, 82, 0.8);
+    }
+  }
+  .acount-create__icon {
+    display: block;
+  }
+  .acount-create__legend {
+    display: block;
+  }
+}
+
+.acount-create__legend--red {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: rgba(218, 20, 20, 0.8);
+  background-color: #fff;
+  display: block;
+  width: fit-content;
+  opacity: 1;
+  padding: 0 5px;
+  top: -16%;
+}
+
+.account-create {
+  margin-bottom: 30px;
+}
+
+.reg-confirm {
+  .check-wrapp {
+    margin-bottom: 30px;
+  }
+  .fliter-checkbox__text {
+    align-items: flex-start;
+  }
+}
+
+
+.reg-confirm__btn {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  background: #00479B;
+  border: 2px solid #00479B;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 169px;
+  height: 40px;
+}
+
+
+

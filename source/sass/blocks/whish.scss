@@ -1,0 +1,110 @@
+.aside {
+  max-width: 270px;
+}
+
+.aside-cab {
+  max-width: 270px;
+  padding: 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.whish-sec {
+  padding: 50px 0 300px;
+}
+
+.breadcrums--whish {
+  margin-bottom: 50px;
+}
+
+.aside-cab__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #072952;
+  margin-bottom: 50px;
+}
+
+.aside-cab__link {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D4D4D4;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #072952;
+  &--active {
+    border-color: #072952;
+    font-weight: bold;
+    color: #072952;
+  }
+}
+
+.aside-cab__item + .aside-cab__item {
+  margin-top: 20px;
+}
+
+.aside-cab__list {
+  margin-bottom: 40px;
+}
+
+.aside-cab__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.aside-cab__bonus {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #072952;
+  width: 50%;
+  &--value {
+    color: #00479B;
+  }
+}
+
+.whish-favorire {
+  max-width: 870px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .whish-favorite__wrapp {
+    position: relative;
+    margin-bottom: 20px;
+    .card {
+      width: 270px;
+    }
+  }
+  .icon-wrapper {
+    opacity: 1;
+  }
+  .card-widjet--sale {
+    display: none;
+  }
+}
+
+.whish-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.view-favorire {
+  max-width: 870px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .view-favorite__wrapp {
+    position: relative;
+    margin-bottom: 20px;
+    .card {
+      width: 270px;
+    }
+  }
+}

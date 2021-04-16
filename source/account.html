@@ -1,0 +1,623 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="default">
+  <title>Catalog</title>
+  <script src="js/picturefill.min.js" async="async"></script>
+  <link rel="preload" href="fonts/Rubik-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Rubik-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top__box">
+          <a href="index.html" class="header-logo animate__animated animate__rotateInUpRight">
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp">
+              <img src="img/logo.png" alt="логотип" class="header-top__logo">
+            </picture>
+          </a>
+          <div class="header-center">
+            <div class="header-center__top">
+              <form action="#" class="header-center__form">
+                <input type="text" placeholder="Поиск" class="header-center__input">
+                <button class="header-center__btn">
+                  <svg width="16" height="16">
+                    <use href="img/sprite/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="header-center__bottom">
+              <ul class="header-center__list">
+                <li class="header-center__item header-center__item--active">
+                  <a href="#" class="header-center__link">
+                    Короновирусу - STOP
+                  </a>
+                </li>
+
+                <li class="header-center__item">
+                  <a href="#" class="header-center__link">
+                    С нами дома интересно
+                  </a>
+                </li>
+
+                <li class="header-center__item">
+                  <a href="#" class="header-center__link">
+                    Играем вместе
+                  </a>
+                </li>
+
+                <li class="header-center__item">
+                  <a href="#" class="header-center__link">
+                    Читаем вместе
+                  </a>
+                </li>
+
+                <li class="header-center__item">
+                  <a href="#" class="header-center__link">
+                    <span>Ещё</span>
+                    <svg width="8" height="5">
+                      <use href='img/sprite/sprite.svg#arrow-down'></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="header-right">
+            <div class="header-tell">
+              <a href="tel:022808445" class="header-number">
+                <svg width="18" height="24" class="header-number__icon">
+                  <use href='img/sprite/sprite.svg#tel'></use>
+                </svg>
+                <span> 0(22)-808-445</span>
+                <div class="header-number__box">
+                  <div class="header-number__top">
+                    <svg width="6" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 1.5l-2 2-2-2" stroke="#072952" stroke-width="1.6" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="header-number__bottom">
+
+                  </div>
+                </div>
+              </a>
+              <p class="header-tell__descr">
+                Оформление заказов и консультации
+              </p>
+            </div>
+            <div class="header-lang">
+              <div class="lang-dropdown">
+                <div class="select">
+                  <div class="select__header">
+                    <span class="select__current">Ro</span>
+                  </div>
+                  <div class="select__body">
+                    <div class="select__wrapp">
+                      <div class="select__item" data-choice="choosen">Ru</div>
+                      <div class="select__item" data-choice="choosen">Eng</div>
+                      <div class="select__item" data-choice="choosen">Ro</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom__box">
+          <div class="header-bottom__left">
+            <div class="catalog-btn">
+              <button class="catalog-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              Каталог
+            </div>
+            <nav class="heder-nav">
+              <ul class="nav-list">
+                <li class="nav-list__item nav-list__item--active">
+                  <a href="#" class="nav-list__link">
+                    Акции и предложения
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    Оптовикам
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    Контакты
+                  </a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link">
+                    <span>Еще</span>
+                    <svg width="8" height="5">
+                      <use href='img/sprite/sprite.svg#arrow-down'></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-widjet animate__animated animate__bounceInRight">
+            <div class="widjet-body">
+              <a href="#" class="widjet-body__link">
+                <span class="widjet-body__value">
+                  2
+                </span>
+                <svg width="23" height="21">
+                  <use href='img/sprite/sprite.svg#like'></use>
+                </svg>
+              </a>
+              <a href="#" class="widjet-body__link">
+                <span class="widjet-body__value widjet-body__value--mode">
+                  10
+                </span>
+                <svg width="25" height="23">
+                  <use href='img/sprite/sprite.svg#copy'></use>
+                </svg>
+              </a>
+              <a href="#" class="widjet-body__link">
+                <span class="widjet-body__value">
+                  2
+                </span>
+                <svg width="25" height="21">
+                  <use href='img/sprite/sprite.svg#cart'></use>
+                </svg>
+              </a>
+              <div class="widjet-info">
+                <span class="widjet-info__title">
+                  Сумма
+                </span>
+                <div class="widjet-info__summa">
+                  256 лей
+                </div>
+              </div>
+            </div>
+            <button class="sign-btn">
+              Войти
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="account-sec">
+      <div class="container">
+        <div class="whish-box">
+          <aside class="aside">
+            <div class="breadcrums breadcrums--whish">
+              <ul class="breadcrums-list">
+                <li class="breadcrums-list__item">
+                  <a href="#" class="breadcrums-list__link">
+                    Главная
+                    <svg width="6" height="8">
+                      <use href='img/sprite/sprite.svg#main-arrow'></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="breadcrums-list__item">
+                  <span class="breadcrums-list__span">
+                    Личный кабинет
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="aside-cab">
+              <h2 class="aside-cab__title">
+                Личный кабинет
+              </h2>
+              <ul class="aside-cab__list">
+                <li class="aside-cab__item">
+                  <a href="#" class="aside-cab__link  aside-cab__link--active">
+                    Мой профиль
+                  </a>
+                </li>
+
+                <li class="aside-cab__item">
+                  <a href="#" class="aside-cab__link">
+                    История заказов (4)
+                  </a>
+                </li>
+
+                <li class="aside-cab__item">
+                  <a href="#" class="aside-cab__link">
+                    Понравившееся товары
+                  </a>
+                </li>
+
+                <li class="aside-cab__item">
+                  <a href="#" class="aside-cab__link">
+                    Список просмотренных товаров
+                  </a>
+                </li>
+              </ul>
+              <div class="aside-cab__bottom">
+                <p class="aside-cab__bonus">
+                  Бонусные <br> баллы
+                </p>
+                <p class="aside-cab__bonus aside-cab__bonus--value">
+                  <b>528</b> BV
+                </p>
+              </div>
+            </div>
+          </aside>
+
+          <div class="account">
+            <div class="account-top">
+              <div class="account-top__image">
+                <img src="img/acount.png" alt="account" class="account-top__img">
+              </div>
+              <div class="account-top__info">
+                <h2 class="account-top__name">
+                  Александр Корчевой
+                </h2>
+                <a href="#" class="account-top__change">
+                  Изменить фото профиля
+                </a>
+              </div>
+            </div>
+
+            <div class="account-body">
+              <h2 class="account-body__title">
+                Контактная информация
+              </h2>
+              <form action="#" class="account-form">
+                <label class="account-form__label" for="#">
+                  <span class="account-form__legend">
+                    Имя
+                  </span>
+                  <input type="text" placeholder="Александр" class="account-form__input">
+                </label>
+                <label class="account-form__label" for="#">
+                  <span class="account-form__legend">
+                    Фамилия
+                  </span>
+                  <input type="text" placeholder="Корчевой" class="account-form__input">
+                </label>
+                <label class="account-form__label" for="#">
+                  <span class="account-form__legend">
+                    Дата рождения
+                  </span>
+                  <input type="date" class="account-form__input">
+                </label>
+                <label class="account-form__label" for="#">
+                  <span class="account-form__legend">
+                    Номер телефона
+                  </span>
+                  <input type="tel" class="account-form__input account-form__input--tell" placeholder="+373 (__) ___ ___">
+                  <svg width="18" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.6 8.7a16 16 0 006.6 7.3l2.2-2.5a1 1 0 011-.2c1.2.4 2.3.6 3.6.6.3 0 .5.1.7.3.2.2.3.5.3.8v3.9c0 .3-.1.6-.3.8a1 1 0 01-.7.3c-4.5 0-8.8-2-12-5.5A20 20 0 010 1C0 .8.1.5.3.3.5.1.7 0 1 0h3.5c.3 0 .5.1.7.3.2.2.3.5.3.8 0 1.4.2 2.7.6 4 0 .4 0 .8-.3 1.1L3.6 8.7z" fill="#D4D4D4"/></svg>
+                </label>
+              </form>
+            </div>
+
+            <div class="account-body">
+              <h2 class="account-body__title">
+                Контактная информация
+              </h2>
+              <form action="#" class="account-form">
+                <label class="account-form__label account-form__label--mail" for="#">
+                  <span class="account-form__legend">
+                    Электронная почта
+                  </span>
+                  <input type="email" placeholder="korcevoy.ui@gmail.com" class="account-form__input">
+                </label>
+                <label class="account-form__label" for="#">
+                  <span class="account-form__legend">
+                    Пароль
+                  </span>
+                  <input type="password" id="password-input" class="account-form__input" placeholder="********" name="password">
+	                <a href="#" class="password-control"></a>
+                </label>
+                <label class="account-form__label" for="#">
+                  <span class="account-form__legend">
+                    Подтверждение пароля
+                  </span>
+                  <input type="password" id="password-input2" class="account-form__input" placeholder="qwertyu" name="password">
+	                <a href="#" class="password-control2"></a>
+                </label>
+              </form>
+              <button class="account-body__btm">
+                Сохранить
+              </button>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe-sec subscribe-sec--main">
+      <div class="container">
+        <div class="subscribe">
+          <div class="subscribe__item">
+            <h2 class="subscribe__title">
+              Подписаться на E-mail рассылку
+            </h2>
+          </div>
+          <p class="subscribe-text">
+            ...и получить купон на 20% <br>
+            скидку на первый заказ
+          </p>
+          <div class="subscribe__item">
+            <form action="#" class="subscribe-form">
+              <input type="text" class="subscribe__input" placeholder="Ваш Email">
+              <button class="subscribe-btn">
+                Подписаться
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-box">
+
+          <div class="footer-item footer-item--logo">
+            <a href="#" class="footer-logo">
+              <img src="img/Logo-footer.png" alt="logo" class="footer-logo__img">
+            </a>
+            <p class="footer-descr">
+              Birovits помогает вам сделать бизнес более эффективным. Наш девиз: «Сосредоточьтесь на главном. Мы
+              позаботимся о мелочах».
+            </p>
+            <a href="#" class="footer-more">
+              Подробнее
+              <svg width="12" height="11">
+                <use href='img/sprite/sprite.svg#more'></use>
+              </svg>
+            </a>
+          </div>
+
+
+          <div class="footer-item">
+            <h3 class="footer-item__title">
+              Информация
+            </h3>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  О компании
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Вопрос-ответ
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Дилерам
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Услуги
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Доставка и оплата
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Как купить
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Магазины
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-item">
+            <h3 class="footer-item__title">
+              Полезное
+            </h3>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Обзоры
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Акции и предложения
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Карта сайта
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Полезная информация
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Новости
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Акции, розыгрыши
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Дисконтные карты
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Бренды
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-item">
+            <h3 class="footer-item__title">
+              Для покупателей
+            </h3>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Моя Корзина
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Войти на сайт
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Зарегистрироваться
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Восстановить пароль
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  Помощь
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-item">
+            <h3 class="footer-item__title">
+              Контакты
+            </h3>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name footer-list__name--height">
+                  <svg width="15" height="20">
+                    <use href='img/sprite/sprite.svg#geo'></use>
+                  </svg>
+                  г. Кишинев, ул. Мирон Костин, 7
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  <svg width="15" height="11">
+                    <use href='img/sprite/sprite.svg#footer-tell'></use>
+                  </svg>
+                  0(22)-808-445
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name">
+                  <svg width="15" height="14">
+                    <use href='img/sprite/sprite.svg#clock'></use>
+                  </svg>
+                  Пн-Пт: 9:00 - 18:00
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="footer-list__name footer-list__name--mail">
+                  <svg width="15" height="13">
+                    <use href='img/sprite/sprite.svg#mail'></use>
+                  </svg>
+                  market@birovits.md
+                </a>
+              </li>
+            </ul>
+            <h3 class="footer-item__title">
+              Социальные сети
+            </h3>
+            <a href="#" class="footer-social">
+              <svg width="25" height="24">
+                <use href='img/sprite/sprite.svg#fb'></use>
+              </svg>
+            </a>
+            <a href="#" class="footer-social">
+              <svg width="25" height="24">
+                <use href='img/sprite/sprite.svg#insta'></use>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-box footer-box--center">
+          <div class="footer-box__item">
+            <p class="footer-box__text">
+              © Birovits - All Rights Reserved
+            </p>
+          </div>
+          <div class="footer-box__item">
+            <a href="#" class="footer-box__link">
+              <svg width="34" height="24">
+                <use href='img/sprite/sprite.svg#visa'></use>
+              </svg>
+            </a>
+            <a href="#" class="footer-box__link">
+              <svg width="34" height="24">
+                <use href='img/sprite/sprite.svg#maestro'></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/JqUi.js"></script>
+  <script src="js/jqTouch.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

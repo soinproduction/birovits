@@ -1,0 +1,164 @@
+.account {
+  max-width: 870px;
+  width: 100%;
+}
+
+.account-top__image {
+  width: 70px;
+  height: 70px;
+  margin-right: 30px;
+}
+
+.account-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.account-top__name {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #072952;
+  margin-bottom: 16px;
+}
+
+.account-top__change {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration-line: underline;
+  color: #00479B;
+}
+
+.account-body__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #072952;
+  margin-bottom: 50px;
+}
+
+.account-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
+}
+
+.account-form__label {
+  width: 48%;
+  position: relative;
+  margin-bottom: 25px;
+  &--mail {
+    width: 100%;
+  }
+  svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+  }
+}
+
+.account-form__input {
+  background: #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: none;
+  height: 48px;
+  padding: 0 16px;
+  position: relative;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #072952;
+  &::placeholder {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(7, 41, 82, 0.8);
+  }
+  &--tell {
+    padding-left: 44px;
+  }
+}
+
+.account-form__legend {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(7, 41, 82, 0.8);
+  position: absolute;
+  left: 20px;
+  top: -10px;
+  z-index: 10;
+}
+
+::-webkit-calendar-picker-indicator {
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23clip0)'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.5 6.00195V21.002C1.5 21.3998 1.65804 21.7813 1.93934 22.0626C2.22064 22.3439 2.60218 22.502 3 22.502H21C21.3978 22.502 21.7794 22.3439 22.0607 22.0626C22.342 21.7813 22.5 21.3998 22.5 21.002V6.00195H1.5ZM3 1.50195C2.20435 1.50195 1.44129 1.81802 0.87868 2.38063C0.316071 2.94324 0 3.7063 0 4.50195L0 21.002C0 21.7976 0.316071 22.5607 0.87868 23.1233C1.44129 23.6859 2.20435 24.002 3 24.002H21C21.7956 24.002 22.5587 23.6859 23.1213 23.1233C23.6839 22.5607 24 21.7976 24 21.002V4.50195C24 3.7063 23.6839 2.94324 23.1213 2.38063C22.5587 1.81802 21.7956 1.50195 21 1.50195H3Z' fill='%23D4D4D4'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.25 0.00195312C5.44891 0.00195313 5.63968 0.0809708 5.78033 0.221623C5.92098 0.362275 6 0.553041 6 0.751953V1.50195C6 1.70087 5.92098 1.89163 5.78033 2.03228C5.63968 2.17294 5.44891 2.25195 5.25 2.25195C5.05109 2.25195 4.86032 2.17294 4.71967 2.03228C4.57902 1.89163 4.5 1.70087 4.5 1.50195V0.751953C4.5 0.553041 4.57902 0.362275 4.71967 0.221623C4.86032 0.0809708 5.05109 0.00195313 5.25 0.00195313V0.00195312ZM18.75 0.00195312C18.9489 0.00195313 19.1397 0.0809708 19.2803 0.221623C19.421 0.362275 19.5 0.553041 19.5 0.751953V1.50195C19.5 1.70087 19.421 1.89163 19.2803 2.03228C19.1397 2.17294 18.9489 2.25195 18.75 2.25195C18.5511 2.25195 18.3603 2.17294 18.2197 2.03228C18.079 1.89163 18 1.70087 18 1.50195V0.751953C18 0.553041 18.079 0.362275 18.2197 0.221623C18.3603 0.0809708 18.5511 0.00195313 18.75 0.00195313V0.00195312Z' fill='%23D4D4D4'/%3e%3cpath d='M18.75 9.00195H17.25C16.8358 9.00195 16.5 9.33774 16.5 9.75195V11.252C16.5 11.6662 16.8358 12.002 17.25 12.002H18.75C19.1642 12.002 19.5 11.6662 19.5 11.252V9.75195C19.5 9.33774 19.1642 9.00195 18.75 9.00195Z' fill='%23D4D4D4'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0'%3e%3crect width='24' height='24' fill='white' transform='translate(0 0.00195312)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e ");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+::-webkit-datetime-edit-day-field:not([aria-valuetext]),
+::-webkit-datetime-edit-month-field:not([aria-valuetext]),
+::-webkit-datetime-edit-year-field:not([aria-valuetext])
+{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(7, 41, 82, 0.8);
+}
+
+
+
+.password {
+	position: relative;
+}
+.password-control , .password-control2{
+	position: absolute;
+	top: 50%;
+  transform: translateY(-50%);
+  opacity: .5;
+	right: 16px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+.password-control.view {
+	background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}
+
+.account-body__btm {
+  width: 170px;
+  height: 40px;
+  background: #00479B;
+  border: 2px solid #00479B;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.account-sec {
+  padding: 50px 0 100px;
+}
+

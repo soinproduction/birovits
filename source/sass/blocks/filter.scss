@@ -17,6 +17,12 @@
   color: rgba(7, 41, 82, 0.8);
 }
 
+.filter-list__button {
+  svg {
+    fill: rgba(7, 41, 82, 0.8);
+  }
+}
+
 .filter-list__button.accordion--active {
 
   svg {
