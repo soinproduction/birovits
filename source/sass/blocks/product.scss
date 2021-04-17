@@ -1,0 +1,325 @@
+.product__item {
+  max-width: 470px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.product-slider {
+  max-width: 470px;
+  margin-bottom: 30px;
+}
+
+.product-nav {
+  max-width: 310px;
+  margin: 0 auto;
+}
+
+.product-nav__wrapp {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.product-wrapper {
+  position: relative;
+}
+
+.product-nav-arrow {
+  position: absolute;
+  top: 25%;
+  svg {
+    fill: #D4D4D4;
+  }
+}
+
+.product-nav-arrow-right {
+  right: 25px;
+}
+
+.product-nav-arrow-left {
+  left: 25px;
+  transform: scaleX(-1) ;
+}
+
+.product-inner {
+  max-width: 570px;
+  width: 100%;
+}
+
+.product-card {
+  max-width: 570px;
+  width: 100%;
+  position: relative;
+  padding-top: 30px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #D4D4D4;
+  }
+}
+
+.product-card__name {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #959595;
+}
+
+.product-card__value {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #072952;
+}
+
+.product-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.product-card__middle {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #D4D4D4;
+  margin-bottom: 10px;
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: initial;
+    opacity: 1;
+  }
+  .icon-wrapper + .icon-wrapper {
+    margin-left: 16px;
+  }
+  .icon-wrapper__text {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #072952;
+  }
+}
+
+.product-select__top {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.product-select__name {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #959595;
+  cursor: pointer;
+  &--active {
+    font-weight: bold;
+    color: #072952;
+  }
+}
+
+.product-select__name + .product-select__name {
+  margin-left: 10px;
+}
+
+.product-select__bottom {
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #D4D4D4;
+  margin-bottom: 10px;
+}
+
+.product-select__box {
+  width: 40px;
+  height: 40px;
+  margin: 0 15px;
+  &--active {
+    border: 1px solid #00479B;
+    border-radius: 5px;
+  }
+}
+
+.product-select__prod {
+  border-radius: 5px;
+}
+
+.product-select__give {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration-line: underline;
+  color: #072952;
+  margin-bottom: 20px;
+}
+
+.product-select__info {
+  width: 50%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #072952;
+}
+
+.product-select__text {
+  color: #959595;
+}
+
+.product-counter {
+  padding: 10px 0;
+  background: linear-gradient(180deg, #F85752 0%, #B31217 107.14%);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-counter {
+  margin-bottom: 10px;
+  text-align: center;
+  .block-counter__wrapp + .block-counter__wrapp {
+    margin-left: 46px;
+  }
+  .counter-style::after {
+    background: linear-gradient(180deg, #F85752 0%, #B31217 107.14%);
+  }
+  .counter-style span {
+    color: #fff;
+  }
+  .counter-style::before {
+    background-image: linear-gradient(#c4c4c4,#c4c4c4),linear-gradient(#fff,#fff),linear-gradient(#fff,#fff),linear-gradient(#fff,#fff),linear-gradient(#fff,#fff);
+  }
+  .сount-value {
+    color: #fff;
+  }
+  .block-counter {
+    padding: 0;
+  }
+  .block-counter__wrapp {
+    position: relative;
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
+  }
+  .block-counter__wrapp::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='6' height='36' viewBox='0 0 6 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='3' cy='19.002' r='3' fill='white'/%3e%3ccircle cx='3' cy='32.002' r='3' fill='white'/%3e%3c/svg%3e ");
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    color: #fff;
+    right: -50%;
+    transform: translateX(-50%);
+  }
+}
+
+.product-counter__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.product-counter__text {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-value__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.price-value__info {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #B31217;
+  padding-left: 20px;
+}
+
+.product-price {
+  .price-value__new {
+    font-weight: bold;
+    font-size: 36px;
+  }
+}
+
+.product-price__basket {
+  width: 140px;
+  height: 40px;
+  background: #00479B;
+  border: 2px solid #00479B;
+  border-radius: 10px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    fill: currentColor;
+    margin-right: 6px;
+  }
+}
+
+.product-price__button {
+  width: 161px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 2px solid #00479B;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #00479B;
+  margin-left: 20px;
+}
+
+.product-price__bottom {
+  display: flex;
+  justify-content: center;
+}
