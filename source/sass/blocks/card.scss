@@ -1,7 +1,7 @@
 .card {
   position: relative;
-
-  // z-index: 0;
+  margin-bottom: 15px;
+  // z-index: 2;
 
   width: 238px;
   padding: 0 10px 20px;
@@ -64,12 +64,22 @@
   }
 }
 
+.article {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
 .card-body__top {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
   outline: none;
+  background-color: transparent;
 }
 
 .card-body__image {
@@ -229,7 +239,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 214px;
+  max-width: 214px;
+  width: 100%;
   height: 40px;
   margin: 0 auto;
 
@@ -259,7 +270,7 @@
   width: 100%;
   padding-bottom: 20px;
 
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 0 0 10px 10px;
   opacity: 0;
 }
@@ -308,11 +319,77 @@
 }
 
 .liders-slide {
+
+}
+
+.card--liders {
+  width: 280px;
+  padding: 20px 0 10px;
+  .card-body__title {
+    line-height: 14px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .block-count__input {
+    width: 45px;
+  }
+
+  .block-count {
+    justify-content: flex-start;
+  }
+
+  .block-count__btn {
+    padding: 0 10px;
+  }
+
+  .exist {
+    margin-bottom: 10px;
+  }
+
+  .card-body__bottom {
+    width: 148px;
+  }
+
+  .card-information {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-body__image {
+    max-width: 122px;
+    height: auto;
+
+    object-fit: contain;
+  }
+
+  .price-value {
+    align-items: flex-start;
+  }
+
+  &:hover {
+    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    .icon-wrapper {
+      top: 36px;
+
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+
   &:hover {
     .hover-wrapper {
       bottom: -35px;
       z-index: 10000;
-
+      background-color: #fff;
+      opacity: 1;
       display: block;
       padding-right: 5px;
       padding-bottom: 10px;
@@ -325,67 +402,10 @@
       }
     }
   }
+}
 
-  .card--liders {
-    width: 100%;
-    padding: 20px 0 10px;
-
-    .card-body__title {
-      line-height: 14px;
-    }
-
-    .card-body {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-    }
-
-    .block-count__input {
-      width: 45px;
-    }
-
-    .block-count {
-      justify-content: flex-start;
-    }
-
-    .block-count__btn {
-      padding: 0 10px;
-    }
-
-    .exist {
-      margin-bottom: 10px;
-    }
-
-    .card-body__bottom {
-      width: 148px;
-    }
-
-    .card-information {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .card-body__image {
-      max-width: 122px;
-      height: auto;
-
-      object-fit: contain;
-    }
-
-    .price-value {
-      align-items: flex-start;
-    }
-
-    &:hover {
-      // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 10px;
-
-      .icon-wrapper {
-        top: 36px;
-
-        display: flex;
-        flex-direction: row;
-      }
-    }
+.catalog-body--row {
+  .article {
+    font-size: 12px;
   }
 }

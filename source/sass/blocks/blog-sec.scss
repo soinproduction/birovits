@@ -1,5 +1,6 @@
 .blog-sec {
   padding-bottom: 128px;
+
 }
 
 .blog__row {
@@ -16,6 +17,9 @@
     width: 100%;
     max-width: 370px;
   }
+  .inform-slide__image {
+    height: 178px;
+  }
 }
 
 .blog-item--big {
@@ -25,6 +29,10 @@
 
     .inform-slide__img {
       width: 100%;
+      object-fit: cover;
     }
+  }
+  .inform-slide__image {
+    height: 320px;
   }
 }

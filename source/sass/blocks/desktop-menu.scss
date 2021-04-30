@@ -1,0 +1,172 @@
+.desktop-menu {
+}
+
+.desktop-list__link,.group-list__link {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #072952;
+  width: 250px;
+  padding: 8px 10px;
+}
+
+.group-list__link {
+  width: 230px;
+}
+
+.desktop-menu__list {
+  background-color: #fff;
+}
+
+.header-bottom__left {
+  position: relative;
+}
+
+.desktop-menu {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 44px;
+}
+
+.desktop-list {
+  padding-top: 20px;
+  position: relative;
+  display: none;
+  &--active {
+    display: block;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.1));
+  }
+}
+
+.group-list {
+  padding-top: 20px;
+  display: none;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.1));
+  position: absolute;
+  left: 250px;
+  top: 0;
+  min-height: 700px;
+  background: #F6F6F6;
+}
+
+
+.desktop-list__item:hover .group-list {
+  display: block;
+}
+
+.group-wrapper {
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 230px;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.1));
+  background-color: #fff;
+  width: 700px;
+  height: 100%;
+  overflow-y: scroll;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.group-list__item:hover .group-wrapper{
+  display: flex;
+}
+
+
+.group-wrapper__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #072952;
+  border-bottom: 1px solid #D4D4D4;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.group-wrapper__link {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.group-wrapper__li + .group-wrapper__li {
+  margin-top: 10px;
+}
+
+.desktop-list__item + .desktop-list__item,
+.group-list__item + .group-list__item {
+  border-top: 1px solid #D4D4D4;
+}
+
+
+.group-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  svg {
+    fill: #D4D4D4;
+  }
+  &:hover {
+    background-color: #fff;
+    color: #00479B;
+    svg {
+      fill:#00479B;
+    }
+  }
+}
+
+.desktop-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  svg {
+    fill: #D4D4D4;
+    position: absolute;
+    right: 10px;
+  }
+  .menu-icons {
+    fill: currentColor;
+  }
+  .menu-stroke {
+    fill: transparent;
+    stroke: currentColor;
+  }
+  &:hover {
+    color: #00479B;
+    background: #F6F6F6;
+    svg {
+      fill:currentColor;
+    }
+  }
+}
+
+.menu-icons, .menu-stroke {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  position: initial !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

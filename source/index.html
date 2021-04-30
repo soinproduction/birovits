@@ -16,6 +16,478 @@
 
 <body>
   <header>
+    <div class="header-mob">
+      <div class="header-mob__item">
+        <div class="hamburger-wrapp">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="header-mob__items">
+        <a href="#" class="header-mob__logo">
+          <img src="img/logo.png" alt="logo" class="header-mob__image">
+        </a>
+        <form action="#" class="search-mobile">
+          <input  type="text" placeholder="Поиск">
+        </form>
+      </div>
+      <div class="header-mob__item">
+          <a href="#" class="header-mob__search">
+            <svg width="22" height="22">
+              <use href="img/sprite/sprite.svg#search"></use>
+            </svg>
+          </a>
+      </div>
+
+      <div class="mobile-cabinet">
+        <div class="mobile-menu__top">
+          <a href="#" class="mobile-logo">
+            <img src="img/logo.png" alt="logo" class="mobile-logo__img">
+          </a>
+          <div class="monile-lang">
+            <button class="monile-lang__btn monile-lang__btn--active">
+              Ру
+            </button>
+            <button class="monile-lang__btn">
+              Ro
+            </button>
+          </div>
+          <button class="cabinet">
+            <svg width="22" height="22">
+              <use href="img/sprite/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="mobile-cabinet__mid">
+          <div class="mobile-cabinet__img">
+            <img src="img/acount.png" alt="" class="mobile-cabinet__image">
+          </div>
+          <h2 class="mobile-cabinet__name">
+            Александр Корчевой
+          </h2>
+        </div>
+        <ul class="mobile-cabinet__list">
+          <li class="mobile-cabinet__item">
+            <a href="#" class="mobile-cabinet__link">
+              Мой профиль
+            </a>
+          </li>
+
+          <li class="mobile-cabinet__item">
+            <a href="#" class="mobile-cabinet__link">
+              История заказов
+            </a>
+          </li>
+
+          <li class="mobile-cabinet__item">
+            <a href="#" class="mobile-cabinet__link">
+              Понравившееся товары
+            </a>
+          </li>
+
+          <li class="mobile-cabinet__item">
+            <a href="#" class="mobile-cabinet__link">
+              Список просмотренных товаров
+            </a>
+          </li>
+
+          <li class="mobile-cabinet__item">
+            <a href="#" class="mobile-cabinet__link">
+              Бонусные баллы
+              <span>
+                <b>528</b>
+                BV
+              </span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+
+
+      <div class="mobile-menu">
+        <div class="mobile-menu__top">
+          <a href="#" class="mobile-logo">
+            <img src="img/logo.png" alt="logo" class="mobile-logo__img">
+          </a>
+          <div class="monile-lang">
+            <button class="monile-lang__btn monile-lang__btn--active">
+              Ру
+            </button>
+            <button class="monile-lang__btn">
+              Ro
+            </button>
+          </div>
+          <button class="hamburger">
+            <svg width="22" height="22">
+              <use href="img/sprite/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu__login">
+          <div class="mobile-menu__profile">
+            <svg width="54" height="40" viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M27 10C28.3261 10 29.5979 10.5268 30.5355 11.4645C31.4732 12.4021 32 13.6739 32 15C32 16.3261 31.4732 17.5979 30.5355 18.5355C29.5979 19.4732 28.3261 20 27 20C25.6739 20 24.4021 19.4732 23.4645 18.5355C22.5268 17.5979 22 16.3261 22 15C22 13.6739 22.5268 12.4021 23.4645 11.4645C24.4021 10.5268 25.6739 10 27 10ZM27 22.5C32.525 22.5 37 24.7375 37 27.5V30H17V27.5C17 24.7375 21.475 22.5 27 22.5Z" fill="#072952"/>
+            </svg>
+          </div>
+          <div class="mobile-menu__sign">
+            <a href="#" class="mobile-menu__reg">
+              Вход
+            </a>
+            <a href="#" class="mobile-menu__reg">
+              Регистрация
+            </a>
+          </div>
+        </div>
+
+        <div class="header-tell">
+          <a href="tel:022808445" class="header-number">
+            <svg width="18" height="24" class="header-number__icon">
+              <use href='img/sprite/sprite.svg#tel'></use>
+            </svg>
+            <span> 0(22)-808-445</span>
+            <div class="header-number__box">
+              <div class="header-number__top">
+                <svg width="6" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 1.5l-2 2-2-2" stroke="#072952" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="header-number__bottom">
+
+              </div>
+            </div>
+          </a>
+          <p class="header-tell__descr">
+            Оформление заказов и консультации
+          </p>
+        </div>
+
+
+        <nav class="mobile-menu__nav">
+          <button class="mobile-menu__button mobile-menu__button--catalog">
+            <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="4" width="6" height="6" fill="#00479B"/>
+              <rect x="2" y="11" width="6" height="6" fill="#00479B"/>
+              <rect x="2" y="18" width="6" height="6" fill="#00479B"/>
+              <rect x="9" y="4" width="6" height="6" fill="#00479B"/>
+              <rect x="9" y="11" width="6" height="6" fill="#00479B"/>
+              <rect x="9" y="18" width="6" height="6" fill="#00479B"/>
+              <rect x="16" y="4" width="6" height="6" fill="#00479B"/>
+              <rect x="16" y="11" width="6" height="6" fill="#00479B"/>
+              <rect x="16" y="18" width="6" height="6" fill="#00479B"/>
+              </svg>
+            Каталог
+            <svg class="mob-ar" width="9" height="14" >
+              <use href='img/sprite/sprite.svg#main-arrow'></use>
+            </svg>
+          </button>
+          <button class="mobile-menu__button mobile-menu__button--categories">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.5 2C10.5109 2 8.60322 2.81125 7.1967 4.25528C5.79018 5.69931 5 7.65783 5 9.7C5 12.318 6.275 14.617 8.21429 16.014V18.5C8.21429 18.7917 8.32717 19.0715 8.5281 19.2778C8.72903 19.4841 9.00155 19.6 9.28571 19.6H15.7143C15.9984 19.6 16.271 19.4841 16.4719 19.2778C16.6728 19.0715 16.7857 18.7917 16.7857 18.5V16.014C18.725 14.617 20 12.318 20 9.7C20 7.65783 19.2098 5.69931 17.8033 4.25528C16.3968 2.81125 14.4891 2 12.5 2ZM9.28571 22.9C9.28571 23.1917 9.3986 23.4715 9.59953 23.6778C9.80046 23.8841 10.073 24 10.3571 24H14.6429C14.927 24 15.1995 23.8841 15.4005 23.6778C15.6014 23.4715 15.7143 23.1917 15.7143 22.9V21.8H9.28571V22.9Z" fill="#00479B"/>
+            </svg>
+            Тематические наборы
+            <svg class="mob-ar" width="9" height="14" >
+              <use href='img/sprite/sprite.svg#main-arrow'></use>
+            </svg>
+          </button>
+          <div class="mobile-second">
+            <button class="mobile-second__back">
+              <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.00089 12.355L3.49432 7L9.00089 1.645L7.30564 6.30654e-07L0.0917975 7L7.30564 14L9.00089 12.355Z" fill="#00479B"/>
+              </svg>
+
+              Назад</button>
+            <ul class="desktop-menu__list desktop-list">
+
+              <li class="desktop-list__item ">
+                <a href="#" class="desktop-list__link">
+                  <svg class="menu-icons"  width="24" height="28">
+                    <use href='img/sprite/sprite.svg#menu'></use>
+                  </svg>
+                  Бумага и бумажная продукция
+                  <svg width="9" height="14" >
+                    <use href='img/sprite/sprite.svg#main-arrow'></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="desktop-list__item">
+                <a href="#" class="desktop-list__link">
+                  <svg class="menu-icons"  width="24" height="28">
+                    <use href='img/sprite/sprite.svg#menu2'></use>
+                  </svg>
+                  Школьные принадлежности
+                  <svg width="9" height="14" >
+                    <use href='img/sprite/sprite.svg#main-arrow'></use>
+                  </svg>
+                </a>
+              </li>
+
+
+              <li class="desktop-list__item">
+                <a href="#" class="desktop-list__link">
+                  <svg class="menu-icons" width="24" height="28">
+                    <use href='img/sprite/sprite.svg#menu3'></use>
+                  </svg>
+                  Товары для офиса
+                  <svg width="9" height="14" >
+                    <use href='img/sprite/sprite.svg#main-arrow'></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="desktop-list__item">
+                <a href="#" class="desktop-list__link">
+                  <svg class="menu-icons" width="24" height="28">
+                    <use href='img/sprite/sprite.svg#menu4'></use>
+                  </svg>
+                  Мебель для офиса
+                  <svg width="9" height="14" >
+                    <use href='img/sprite/sprite.svg#main-arrow'></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="desktop-list__item">
+                <a href="#" class="desktop-list__link">
+                  <svg class="menu-icons" width="24" height="28">
+                    <use href='img/sprite/sprite.svg#menu5'></use>
+                  </svg>
+                  Хозтовары, продукты
+                  <svg width="9" height="14" >
+                    <use href='img/sprite/sprite.svg#main-arrow'></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="desktop-list__item">
+                <a href="#" class="desktop-list__link">
+                  <svg class="menu-icons" width="24" height="28">
+                    <use href='img/sprite/sprite.svg#menu6'></use>
+                  </svg>
+                  Техника
+                  <svg width="9" height="14" >
+                    <use href='img/sprite/sprite.svg#main-arrow'></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="desktop-list__item">
+                <a href="#" class="desktop-list__link">
+                  <svg class="menu-stroke" width="24" height="28">
+                    <use href='img/sprite/sprite.svg#menu7'></use>
+                  </svg>
+                  Творчество и досуг
+                  <svg width="9" height="14" >
+                    <use href='img/sprite/sprite.svg#main-arrow'></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="desktop-list__item">
+                <a href="#" class="desktop-list__link">
+                  <svg class="menu-icons" width="24" height="28">
+                    <use href='img/sprite/sprite.svg#menu8'></use>
+                  </svg>
+                  Спортивно-наградная
+                  продукция
+                  <svg width="9" height="14" >
+                    <use href='img/sprite/sprite.svg#main-arrow'></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-third">
+            <button class="mobile-third__back">
+              <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.00089 12.355L3.49432 7L9.00089 1.645L7.30564 6.30654e-07L0.0917975 7L7.30564 14L9.00089 12.355Z" fill="#00479B"/>
+              </svg>
+              Назад</button>
+            <ul class="group-list">
+              <li class="group-list__item">
+                <a href="#" class="group-list__link">
+                  Бейджи и шнурки для <br> бейджей
+                  <svg width="9" height="14" >
+                    <use href='img/sprite/sprite.svg#main-arrow'></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="group-list__item">
+                <a href="#" class="group-list__link">
+                  Демонстрационное <br> оборудование
+                  <svg width="9" height="14" >
+                    <use href='img/sprite/sprite.svg#main-arrow'></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="group-list__item">
+                <a href="#" class="group-list__link">
+
+                  Папки, системы <br> архивации
+                  <svg width="9" height="14" >
+                    <use href='img/sprite/sprite.svg#main-arrow'></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="group-list__item">
+                <a href="#" class="group-list__link">
+                  Офисные <br> принадлежности
+                  <svg width="9" height="14" >
+                    <use href='img/sprite/sprite.svg#main-arrow'></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="group-list__item">
+                <a href="#" class="group-list__link">
+                  Письменные <br> принадлежности
+                  <svg width="9" height="14" >
+                    <use href='img/sprite/sprite.svg#main-arrow'></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobile-categories">
+            <button class="mobile-categories__back">
+              <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.00089 12.355L3.49432 7L9.00089 1.645L7.30564 6.30654e-07L0.0917975 7L7.30564 14L9.00089 12.355Z" fill="#00479B"/>
+              </svg>
+              Назад</button>
+
+            <ul class="mobile-categories__list">
+              <li class="mobile-categories__item">
+                <a href="#" class="mobile-categories__link">
+                  Короновирусу - STOP
+                </a>
+              </li>
+
+              <li class="mobile-categories__item">
+                <a href="#" class="mobile-categories__link">
+                  С нами дома интересно
+                </a>
+              </li>
+
+              <li class="mobile-categories__item">
+                <a href="#" class="mobile-categories__link">
+                  Играем вместе
+                </a>
+              </li>
+
+              <li class="mobile-categories__item">
+                <a href="#" class="mobile-categories__link">
+                  Читаем вместе
+                </a>
+              </li>
+
+              <li class="mobile-categories__item">
+                <a href="#" class="mobile-categories__link">
+                  Творчество
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+
+        <ul class="mobile-menu__categ">
+          <li class="mobile-menu__inner">
+            <a href="#" class="mobile-menu__naming">
+              Акции и предложения
+            </a>
+          </li>
+
+
+          <li class="mobile-menu__inner">
+            <a href="#" class="mobile-menu__naming">
+              Доставка
+            </a>
+          </li>
+
+          <li class="mobile-menu__inner">
+            <a href="#" class="mobile-menu__naming">
+              Дилерам
+            </a>
+          </li>
+
+          <li class="mobile-menu__inner">
+            <a href="#" class="mobile-menu__naming">
+              Контакты
+            </a>
+          </li>
+
+          <li class="mobile-menu__inner">
+            <a href="#" class="mobile-menu__naming">
+              О нас
+            </a>
+          </li>
+
+          <li class="mobile-menu__inner">
+            <a href="#" class="mobile-menu__naming">
+              Гарантия
+            </a>
+          </li>
+
+          <li class="mobile-menu__inner">
+            <a href="#" class="mobile-menu__naming">
+              Вопросы и ответы
+            </a>
+          </li>
+
+          <li class="mobile-menu__inner">
+            <a href="#" class="mobile-menu__naming">
+              Возврат товара
+            </a>
+          </li>
+
+          <li class="mobile-menu__inner">
+            <a href="#" class="mobile-menu__naming">
+              Услуги
+            </a>
+          </li>
+
+          <li class="mobile-menu__inner">
+            <a href="#" class="mobile-menu__naming">
+              Дисконтные карты
+            </a>
+          </li>
+
+          <li class="mobile-menu__inner">
+            <a href="#" class="mobile-menu__naming">
+              Как купить
+            </a>
+          </li>
+
+
+          <li class="mobile-menu__inner">
+            <a href="#" class="mobile-menu__naming">
+              Сотрудничество
+            </a>
+          </li>
+
+
+
+        </ul>
+
+
+
+      </div>
+
+
+    </div>
+
+
     <div class="header-top">
       <h1 class="visually-hidden">
         Папки Berlingo, канцтовары
@@ -30,7 +502,7 @@
           </a>
           <div class="header-center">
             <div class="header-center__top">
-              <form action="#" class="header-center__form">
+              <form action="#" id="main-form" class="header-center__form">
                 <input type="text" placeholder="Поиск" class="header-center__input">
                 <button class="header-center__btn">
                   <svg width="16" height="16">
@@ -65,13 +537,38 @@
                   </a>
                 </li>
 
-                <li class="header-center__item">
+                <li class="header-center__item header-center__item--more">
                   <a href="#" class="header-center__link">
                     <span>Ещё</span>
                     <svg width="8" height="5">
                       <use href='img/sprite/sprite.svg#arrow-down'></use>
                     </svg>
                   </a>
+                  <div class="header-center-hover">
+                    <ul class="header-center-hover__list">
+                      <li class="header-center-hover__item">
+                        <a href="#" class="header-center-hover__link">
+                          О компании
+                        </a>
+                      </li>
+
+                      <li class="header-center-hover__item">
+                        <a href="#" class="header-center-hover__link">
+                          Вопрос-ответ
+                        </a>
+                      </li>
+                      <li class="header-center-hover__item">
+                        <a href="#" class="header-center-hover__link">
+                          Услуги
+                        </a>
+                      </li>
+                      <li class="header-center-hover__item">
+                        <a href="#" class="header-center-hover__link">
+                          Как купить
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -98,6 +595,56 @@
               <p class="header-tell__descr">
                 Оформление заказов и консультации
               </p>
+
+
+              <div class="header-tell-hover">
+                <ul class="header-tell-hover__list">
+                  <li class="header-tell-hover__item">
+                    <a href="tell:37378897790" class="header-tell-hover__link">
+                      <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 14.5C5.76522 14.5 6.01957 14.3946 6.20711 14.2071C6.39464 14.0196 6.5 13.7652 6.5 13.5C6.5 13.2348 6.39464 12.9804 6.20711 12.7929C6.01957 12.6054 5.76522 12.5 5.5 12.5C5.23478 12.5 4.98043 12.6054 4.79289 12.7929C4.60536 12.9804 4.5 13.2348 4.5 13.5C4.5 13.7652 4.60536 14.0196 4.79289 14.2071C4.98043 14.3946 5.23478 14.5 5.5 14.5Z" fill="#072952"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 1.5H2.5C2.23478 1.5 1.98043 1.60536 1.79289 1.79289C1.60536 1.98043 1.5 2.23478 1.5 2.5V14.5C1.5 14.7652 1.60536 15.0196 1.79289 15.2071C1.98043 15.3946 2.23478 15.5 2.5 15.5H8.5C8.76522 15.5 9.01957 15.3946 9.20711 15.2071C9.39464 15.0196 9.5 14.7652 9.5 14.5V2.5C9.5 2.23478 9.39464 1.98043 9.20711 1.79289C9.01957 1.60536 8.76522 1.5 8.5 1.5ZM2.5 0.5C1.96957 0.5 1.46086 0.710714 1.08579 1.08579C0.710714 1.46086 0.5 1.96957 0.5 2.5V14.5C0.5 15.0304 0.710714 15.5391 1.08579 15.9142C1.46086 16.2893 1.96957 16.5 2.5 16.5H8.5C9.03043 16.5 9.53914 16.2893 9.91421 15.9142C10.2893 15.5391 10.5 15.0304 10.5 14.5V2.5C10.5 1.96957 10.2893 1.46086 9.91421 1.08579C9.53914 0.710714 9.03043 0.5 8.5 0.5H2.5Z" fill="#00479B"/>
+                      </svg>
+                      +373 78 897-790
+                    </a>
+                  </li>
+
+                  <li class="header-tell-hover__item">
+                    <a href="tell:37378897790" class="header-tell-hover__link">
+                      <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 14.5C5.76522 14.5 6.01957 14.3946 6.20711 14.2071C6.39464 14.0196 6.5 13.7652 6.5 13.5C6.5 13.2348 6.39464 12.9804 6.20711 12.7929C6.01957 12.6054 5.76522 12.5 5.5 12.5C5.23478 12.5 4.98043 12.6054 4.79289 12.7929C4.60536 12.9804 4.5 13.2348 4.5 13.5C4.5 13.7652 4.60536 14.0196 4.79289 14.2071C4.98043 14.3946 5.23478 14.5 5.5 14.5Z" fill="#072952"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 1.5H2.5C2.23478 1.5 1.98043 1.60536 1.79289 1.79289C1.60536 1.98043 1.5 2.23478 1.5 2.5V14.5C1.5 14.7652 1.60536 15.0196 1.79289 15.2071C1.98043 15.3946 2.23478 15.5 2.5 15.5H8.5C8.76522 15.5 9.01957 15.3946 9.20711 15.2071C9.39464 15.0196 9.5 14.7652 9.5 14.5V2.5C9.5 2.23478 9.39464 1.98043 9.20711 1.79289C9.01957 1.60536 8.76522 1.5 8.5 1.5ZM2.5 0.5C1.96957 0.5 1.46086 0.710714 1.08579 1.08579C0.710714 1.46086 0.5 1.96957 0.5 2.5V14.5C0.5 15.0304 0.710714 15.5391 1.08579 15.9142C1.46086 16.2893 1.96957 16.5 2.5 16.5H8.5C9.03043 16.5 9.53914 16.2893 9.91421 15.9142C10.2893 15.5391 10.5 15.0304 10.5 14.5V2.5C10.5 1.96957 10.2893 1.46086 9.91421 1.08579C9.53914 0.710714 9.03043 0.5 8.5 0.5H2.5Z" fill="#00479B"/>
+                      </svg>
+                      +373 78 897-790
+                    </a>
+                  </li>
+
+                  <li class="header-tell-hover__item">
+                    <a href="tell:37378897790" class="header-tell-hover__link">
+                      <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 14.5C5.76522 14.5 6.01957 14.3946 6.20711 14.2071C6.39464 14.0196 6.5 13.7652 6.5 13.5C6.5 13.2348 6.39464 12.9804 6.20711 12.7929C6.01957 12.6054 5.76522 12.5 5.5 12.5C5.23478 12.5 4.98043 12.6054 4.79289 12.7929C4.60536 12.9804 4.5 13.2348 4.5 13.5C4.5 13.7652 4.60536 14.0196 4.79289 14.2071C4.98043 14.3946 5.23478 14.5 5.5 14.5Z" fill="#072952"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 1.5H2.5C2.23478 1.5 1.98043 1.60536 1.79289 1.79289C1.60536 1.98043 1.5 2.23478 1.5 2.5V14.5C1.5 14.7652 1.60536 15.0196 1.79289 15.2071C1.98043 15.3946 2.23478 15.5 2.5 15.5H8.5C8.76522 15.5 9.01957 15.3946 9.20711 15.2071C9.39464 15.0196 9.5 14.7652 9.5 14.5V2.5C9.5 2.23478 9.39464 1.98043 9.20711 1.79289C9.01957 1.60536 8.76522 1.5 8.5 1.5ZM2.5 0.5C1.96957 0.5 1.46086 0.710714 1.08579 1.08579C0.710714 1.46086 0.5 1.96957 0.5 2.5V14.5C0.5 15.0304 0.710714 15.5391 1.08579 15.9142C1.46086 16.2893 1.96957 16.5 2.5 16.5H8.5C9.03043 16.5 9.53914 16.2893 9.91421 15.9142C10.2893 15.5391 10.5 15.0304 10.5 14.5V2.5C10.5 1.96957 10.2893 1.46086 9.91421 1.08579C9.53914 0.710714 9.03043 0.5 8.5 0.5H2.5Z" fill="#00479B"/>
+                      </svg>
+                      +373 78 897-790
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="header-tell-hove__adress">
+                  <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.415 5.23242C9.89586 5.23242 9.38835 5.38638 8.95667 5.67481C8.52499 5.96325 8.18854 6.37322 7.98986 6.85288C7.79118 7.33253 7.73919 7.86033 7.84048 8.36953C7.94177 8.87873 8.19177 9.34646 8.55888 9.71358C8.926 10.0807 9.39373 10.3307 9.90293 10.432C10.4121 10.5333 10.9399 10.4813 11.4196 10.2826C11.8992 10.0839 12.3092 9.74747 12.5976 9.31579C12.8861 8.88411 13.04 8.3766 13.04 7.85742C13.0392 7.16147 12.7624 6.49425 12.2703 6.00214C11.7782 5.51003 11.111 5.23321 10.415 5.23242ZM10.415 9.16992C10.1555 9.16992 9.90169 9.09294 9.68585 8.94872C9.47001 8.80451 9.30179 8.59952 9.20245 8.35969C9.10311 8.11987 9.07712 7.85597 9.12776 7.60137C9.1784 7.34677 9.30341 7.1129 9.48696 6.92934C9.67052 6.74579 9.90438 6.62078 10.159 6.57014C10.4136 6.5195 10.6775 6.54549 10.9173 6.64483C11.1571 6.74417 11.3621 6.9124 11.5063 7.12824C11.6506 7.34407 11.7275 7.59783 11.7275 7.85742C11.7271 8.20539 11.5887 8.539 11.3427 8.78506C11.0966 9.03111 10.763 9.16952 10.415 9.16992Z" fill="#00479B"/>
+                    <path d="M15.4593 2.80943C14.2121 1.56257 12.5473 0.821888 10.7861 0.73033C9.02495 0.638772 7.29229 1.20283 5.92255 2.31364C4.55281 3.42446 3.64308 5.00327 3.36895 6.74538C3.09483 8.48749 3.47573 10.2694 4.43814 11.7472L9.39722 19.3602C9.50758 19.5296 9.65847 19.6688 9.83622 19.7651C10.014 19.8615 10.2129 19.912 10.4151 19.912C10.6173 19.912 10.8163 19.8615 10.994 19.7651C11.1718 19.6688 11.3227 19.5296 11.433 19.3602L16.3923 11.7472C17.2853 10.3763 17.6799 8.74016 17.5101 7.11293C17.3402 5.4857 16.6162 3.96631 15.4593 2.80943ZM15.2926 11.0308L10.4151 18.5182L5.53769 11.0308C4.04472 8.73885 4.36493 5.6717 6.29906 3.73749C6.83959 3.19695 7.48129 2.76817 8.18753 2.47563C8.89377 2.18309 9.65071 2.03252 10.4151 2.03252C11.1796 2.03252 11.9365 2.18309 12.6428 2.47563C13.349 2.76817 13.9907 3.19695 14.5312 3.73749C16.4654 5.6717 16.7855 8.73885 15.2926 11.0308Z" fill="#00479B"/>
+                    </svg>
+                    г. Кишинев, ул. Мирон Костин, 7
+                </a>
+                <a href="#" class="header-tell-hove__mail">
+                  <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.9 0.773438H13.1C13.4713 0.773438 13.8274 0.924289 14.0899 1.19281C14.3525 1.46133 14.5 1.82551 14.5 2.20526V10.7962C14.5 11.1759 14.3525 11.5401 14.0899 11.8086C13.8274 12.0771 13.4713 12.228 13.1 12.228H1.9C1.123 12.228 0.5 11.5837 0.5 10.7962V2.20526C0.5 1.4106 1.123 0.773438 1.9 0.773438ZM7.5 5.7848L13.1 2.20526H1.9L7.5 5.7848ZM1.9 10.7962H13.1V3.90196L7.5 7.47435L1.9 3.90196V10.7962Z" fill="#00479B"/>
+                    </svg>
+                    market@birovits.md
+                </a>
+              </div>
+
+
             </div>
             <div class="header-lang">
               <div class="lang-dropdown">
@@ -122,6 +669,7 @@
       </div>
     </div>
     <div class="header-bottom">
+
       <div class="container">
         <div class="header-bottom__box">
           <div class="header-bottom__left">
@@ -132,6 +680,313 @@
                 <span></span>
               </button>
               Каталог
+            </div>
+            <div class="desktop-menu">
+              <ul class="desktop-menu__list desktop-list">
+
+                <li class="desktop-list__item ">
+                  <a href="#" class="desktop-list__link">
+                    <svg class="menu-icons" width="18" height="18" >
+                      <use href='img/sprite/sprite.svg#menu'></use>
+                    </svg>
+                    Бумага и бумажная продукция
+                    <svg width="9" height="14" >
+                      <use href='img/sprite/sprite.svg#main-arrow'></use>
+                    </svg>
+                  </a>
+                  <ul class="group-list">
+                    <li class="group-list__item">
+                      <a href="#" class="group-list__link">
+                        Бейджи и шнурки для <br> бейджей
+                        <svg width="9" height="14" >
+                          <use href='img/sprite/sprite.svg#main-arrow'></use>
+                        </svg>
+                      </a>
+                      <ul class="group-wrapper">
+                        <li class="group-wrapper__item">
+                          <h5 class="group-wrapper__title">
+                            Клейкие ленты "скотч" и диспенсеры
+                          </h5>
+                          <ul class="group-wrapper__list">
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Диспенсеры для канцелярских лент</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Канцелярские ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Монтажные ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                             <a href="#" class="group-wrapper__link">Упаковачные ленты</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="group-wrapper__item">
+                          <h5 class="group-wrapper__title">
+                            Клейкие ленты "скотч" и диспенсеры
+                          </h5>
+                          <ul class="group-wrapper__list">
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Диспенсеры для канцелярских лент</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Канцелярские ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Монтажные ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                             <a href="#" class="group-wrapper__link">Упаковачные ленты</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="group-wrapper__item">
+                          <h5 class="group-wrapper__title">
+                            Клейкие ленты "скотч" и диспенсеры
+                          </h5>
+                          <ul class="group-wrapper__list">
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Диспенсеры для канцелярских лент</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Канцелярские ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Монтажные ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                             <a href="#" class="group-wrapper__link">Упаковачные ленты</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="group-wrapper__item">
+                          <h5 class="group-wrapper__title">
+                            Клейкие ленты "скотч" и диспенсеры
+                          </h5>
+                          <ul class="group-wrapper__list">
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Диспенсеры для канцелярских лент</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Канцелярские ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Монтажные ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                             <a href="#" class="group-wrapper__link">Упаковачные ленты</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="group-wrapper__item">
+                          <h5 class="group-wrapper__title">
+                            Клейкие ленты "скотч" и диспенсеры
+                          </h5>
+                          <ul class="group-wrapper__list">
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Диспенсеры для канцелярских лент</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Канцелярские ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Монтажные ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                             <a href="#" class="group-wrapper__link">Упаковачные ленты</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="group-wrapper__item">
+                          <h5 class="group-wrapper__title">
+                            Клейкие ленты "скотч" и диспенсеры
+                          </h5>
+                          <ul class="group-wrapper__list">
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Диспенсеры для канцелярских лент</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Канцелярские ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Монтажные ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                             <a href="#" class="group-wrapper__link">Упаковачные ленты</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="group-wrapper__item">
+                          <h5 class="group-wrapper__title">
+                            Клейкие ленты "скотч" и диспенсеры
+                          </h5>
+                          <ul class="group-wrapper__list">
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Диспенсеры для канцелярских лент</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Канцелярские ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Монтажные ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                             <a href="#" class="group-wrapper__link">Упаковачные ленты</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="group-wrapper__item">
+                          <h5 class="group-wrapper__title">
+                            Клейкие ленты "скотч" и диспенсеры
+                          </h5>
+                          <ul class="group-wrapper__list">
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Диспенсеры для канцелярских лент</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Канцелярские ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                              <a href="#" class="group-wrapper__link">Монтажные ленты</a>
+                            </li>
+                            <li class="group-wrapper__li">
+                             <a href="#" class="group-wrapper__link">Упаковачные ленты</a>
+                            </li>
+                          </ul>
+                        </li>
+
+                      </ul>
+                    </li>
+
+                    <li class="group-list__item">
+                      <a href="#" class="group-list__link">
+                        Демонстрационное <br> оборудование
+                        <svg width="9" height="14" >
+                          <use href='img/sprite/sprite.svg#main-arrow'></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="group-list__item">
+                      <a href="#" class="group-list__link">
+
+                        Папки, системы <br> архивации
+                        <svg width="9" height="14" >
+                          <use href='img/sprite/sprite.svg#main-arrow'></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="group-list__item">
+                      <a href="#" class="group-list__link">
+                        Офисные <br> принадлежности
+                        <svg width="9" height="14" >
+                          <use href='img/sprite/sprite.svg#main-arrow'></use>
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li class="group-list__item">
+                      <a href="#" class="group-list__link">
+                        Письменные <br> принадлежности
+                        <svg width="9" height="14" >
+                          <use href='img/sprite/sprite.svg#main-arrow'></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="desktop-list__item">
+                  <a href="#" class="desktop-list__link">
+                    <svg class="menu-icons"  width="24" height="28">
+                      <use href='img/sprite/sprite.svg#menu2'></use>
+                    </svg>
+                    Школьные принадлежности
+                    <svg width="9" height="14" >
+                      <use href='img/sprite/sprite.svg#main-arrow'></use>
+                    </svg>
+                  </a>
+                </li>
+
+
+                <li class="desktop-list__item">
+                  <a href="#" class="desktop-list__link">
+                    <svg class="menu-icons" width="24" height="28">
+                      <use href='img/sprite/sprite.svg#menu3'></use>
+                    </svg>
+                    Товары для офиса
+                    <svg width="9" height="14" >
+                      <use href='img/sprite/sprite.svg#main-arrow'></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="desktop-list__item">
+                  <a href="#" class="desktop-list__link">
+                    <svg class="menu-icons" width="24" height="28">
+                      <use href='img/sprite/sprite.svg#menu4'></use>
+                    </svg>
+                    Мебель для офиса
+                    <svg width="9" height="14" >
+                      <use href='img/sprite/sprite.svg#main-arrow'></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="desktop-list__item">
+                  <a href="#" class="desktop-list__link">
+                    <svg class="menu-icons" width="24" height="28">
+                      <use href='img/sprite/sprite.svg#menu5'></use>
+                    </svg>
+                    Хозтовары, продукты
+                    <svg width="9" height="14" >
+                      <use href='img/sprite/sprite.svg#main-arrow'></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="desktop-list__item">
+                  <a href="#" class="desktop-list__link">
+                    <svg class="menu-icons" width="24" height="28">
+                      <use href='img/sprite/sprite.svg#menu6'></use>
+                    </svg>
+                    Техника
+                    <svg width="9" height="14" >
+                      <use href='img/sprite/sprite.svg#main-arrow'></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="desktop-list__item">
+                  <a href="#" class="desktop-list__link">
+                    <svg class="menu-stroke" width="24" height="28">
+                      <use href='img/sprite/sprite.svg#menu7'></use>
+                    </svg>
+                    Творчество и досуг
+                    <svg width="9" height="14" >
+                      <use href='img/sprite/sprite.svg#main-arrow'></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="desktop-list__item">
+                  <a href="#" class="desktop-list__link">
+                    <svg class="menu-icons" width="24" height="28">
+                      <use href='img/sprite/sprite.svg#menu8'></use>
+                    </svg>
+                    Спортивно-наградная
+                    продукция
+                    <svg width="9" height="14" >
+                      <use href='img/sprite/sprite.svg#main-arrow'></use>
+                    </svg>
+                  </a>
+                </li>
+
+
+
+              </ul>
             </div>
             <nav class="heder-nav">
               <ul class="nav-list">
@@ -987,10 +1842,10 @@
       <div class="container">
         <div class="all-top">
           <h2 class="all-top__title">
-            Новинки
+            Лидеры продаж
           </h2>
           <a href="#" class="all-top__link">
-            <span> Все новинки</span>
+            <span> Все лидеры</span>
             <svg width="6" height="11">
               <use href='img/sprite/sprite.svg#main-arrow'></use>
             </svg>
@@ -1709,284 +2564,296 @@
           <div class="hot__item">
             <div class="hot-slider">
               <div class="hot-slide">
-                <div class="card hot-card">
-                  <div class="card__wrapper">
-                    <span class="card-widjet card-widjet--hit">
-                      HIT
-                    </span>
-                    <span class="card-widjet card-widjet--sale">
-                      20%
-                    </span>
-                    <div class="card-body">
-                      <a href="#" class="card-body__top">
-                        <img src="img/tovar/img.png" alt="Товар" class="card-body__image">
-                      </a>
-                      <div class="card-body__bottom">
-                        <div class="hot-top">
-                          <h2 class="hot-top__title">
-                            Флэш-ручка стилус 8Gb USB2.0 серябряная
-                          </h2>
-                          <h3 class="hot-top__subtitle">
-                            Поторопитесь!
-                            <span>
-                              Осталось:
-                            </span>
-                          </h3>
-                        </div>
-                        <div class="counter-wrapper">
-                          <div class="price-value price-value--hot">
-                            <span class="price-value__old">
-                              52,20 лей
-                            </span>
-                            <span class="price-value__new">
-                              48,00 лей
-                            </span>
+                <div class="hot-slide__wrapper">
+                  <div class="card hot-card">
+                    <div class="card__wrapper">
+                      <span class="card-widjet card-widjet--hit">
+                        HIT
+                      </span>
+                      <span class="card-widjet card-widjet--sale">
+                        20%
+                      </span>
+                      <div class="card-body">
+                        <a href="#" class="card-body__top">
+                          <img src="img/tovar/img.png" alt="Товар" class="card-body__image">
+                        </a>
+                        <div class="card-body__bottom">
+                          <div class="hot-top">
+                            <h2 class="hot-top__title">
+                              Флэш-ручка стилус 8Gb USB2.0 серябряная
+                            </h2>
+                            <h3 class="hot-top__subtitle">
+                              Поторопитесь!
+                              <span>
+                                Осталось:
+                              </span>
+                            </h3>
                           </div>
-                          <div class="block-counter">
-                            <div class="block-counter__wrapp">
-                              <div class="block-day counter-style">
-                                <span>02</span>
-                              </div>
-                              <p class="сount-value">
-                                Дней
-                              </p>
+                          <div class="counter-wrapper">
+                            <div class="price-value price-value--hot">
+                              <span class="price-value__old">
+                                52,20 лей
+                              </span>
+                              <span class="price-value__new">
+                                48,00 лей
+                              </span>
                             </div>
-                            <div class="block-counter__wrapp">
-                              <div class="block-day counter-style">
-                                <span>05</span>
+                            <div class="block-counter">
+                              <div class="block-counter__wrapp">
+                                <div class="block-day counter-style">
+                                  <span>02</span>
+                                </div>
+                                <p class="сount-value">
+                                  Дней
+                                </p>
                               </div>
-                              <p class="сount-value">
-                                Часов
-                              </p>
-                            </div>
-                            <div class="block-counter__wrapp">
-                              <div class="block-day counter-style">
-                                <span>25</span>
+                              <div class="block-counter__wrapp">
+                                <div class="block-day counter-style">
+                                  <span>05</span>
+                                </div>
+                                <p class="сount-value">
+                                  Часов
+                                </p>
                               </div>
-                              <p class="сount-value">
-                                Минут
-                              </p>
-                            </div>
+                              <div class="block-counter__wrapp">
+                                <div class="block-day counter-style">
+                                  <span>25</span>
+                                </div>
+                                <p class="сount-value">
+                                  Минут
+                                </p>
+                              </div>
 
+                            </div>
                           </div>
                         </div>
+
+
+
                       </div>
-
-
-
                     </div>
                   </div>
                 </div>
+
               </div>
               <div class="hot-slide">
-                <div class="card hot-card">
-                  <div class="card__wrapper">
-                    <span class="card-widjet card-widjet--hit">
-                      HIT
-                    </span>
-                    <span class="card-widjet card-widjet--sale">
-                      20%
-                    </span>
-                    <div class="card-body">
-                      <a href="#" class="card-body__top">
-                        <img src="img/tovar/img2.png" alt="Товар" class="card-body__image">
-                      </a>
-                      <div class="card-body__bottom">
-                        <div class="hot-top">
-                          <h2 class="hot-top__title">
-                            Флэш-ручка стилус 8Gb USB2.0 серябряная
-                          </h2>
-                          <h3 class="hot-top__subtitle">
-                            Поторопитесь!
-                            <span>
-                              Осталось:
-                            </span>
-                          </h3>
-                        </div>
-                        <div class="counter-wrapper">
-                          <div class="price-value price-value--hot">
-                            <span class="price-value__old">
-                              52,20 лей
-                            </span>
-                            <span class="price-value__new">
-                              48,00 лей
-                            </span>
+                <div class="hot-slide__wrapper">
+                  <div class="card hot-card">
+                    <div class="card__wrapper">
+                      <span class="card-widjet card-widjet--hit">
+                        HIT
+                      </span>
+                      <span class="card-widjet card-widjet--sale">
+                        20%
+                      </span>
+                      <div class="card-body">
+                        <a href="#" class="card-body__top">
+                          <img src="img/tovar/img2.png" alt="Товар" class="card-body__image">
+                        </a>
+                        <div class="card-body__bottom">
+                          <div class="hot-top">
+                            <h2 class="hot-top__title">
+                              Флэш-ручка стилус 8Gb USB2.0 серябряная
+                            </h2>
+                            <h3 class="hot-top__subtitle">
+                              Поторопитесь!
+                              <span>
+                                Осталось:
+                              </span>
+                            </h3>
                           </div>
-                          <div class="block-counter">
-                            <div class="block-counter__wrapp">
-                              <div class="block-day counter-style">
-                                <span>02</span>
-                              </div>
-                              <p class="сount-value">
-                                Дней
-                              </p>
+                          <div class="counter-wrapper">
+                            <div class="price-value price-value--hot">
+                              <span class="price-value__old">
+                                52,20 лей
+                              </span>
+                              <span class="price-value__new">
+                                48,00 лей
+                              </span>
                             </div>
-                            <div class="block-counter__wrapp">
-                              <div class="block-day counter-style">
-                                <span>05</span>
+                            <div class="block-counter">
+                              <div class="block-counter__wrapp">
+                                <div class="block-day counter-style">
+                                  <span>02</span>
+                                </div>
+                                <p class="сount-value">
+                                  Дней
+                                </p>
                               </div>
-                              <p class="сount-value">
-                                Часов
-                              </p>
-                            </div>
-                            <div class="block-counter__wrapp">
-                              <div class="block-day counter-style">
-                                <span>25</span>
+                              <div class="block-counter__wrapp">
+                                <div class="block-day counter-style">
+                                  <span>05</span>
+                                </div>
+                                <p class="сount-value">
+                                  Часов
+                                </p>
                               </div>
-                              <p class="сount-value">
-                                Минут
-                              </p>
-                            </div>
+                              <div class="block-counter__wrapp">
+                                <div class="block-day counter-style">
+                                  <span>25</span>
+                                </div>
+                                <p class="сount-value">
+                                  Минут
+                                </p>
+                              </div>
 
+                            </div>
                           </div>
                         </div>
+
+
+
                       </div>
-
-
-
                     </div>
                   </div>
                 </div>
+
               </div>
               <div class="hot-slide">
-                <div class="card hot-card">
-                  <div class="card__wrapper">
-                    <span class="card-widjet card-widjet--hit">
-                      HIT
-                    </span>
-                    <span class="card-widjet card-widjet--sale">
-                      20%
-                    </span>
-                    <div class="card-body">
-                      <a href="#" class="card-body__top">
-                        <img src="img/tovar/img3.png" alt="Товар" class="card-body__image">
-                      </a>
-                      <div class="card-body__bottom">
-                        <div class="hot-top">
-                          <h2 class="hot-top__title">
-                            Флэш-ручка стилус 8Gb USB2.0 серябряная
-                          </h2>
-                          <h3 class="hot-top__subtitle">
-                            Поторопитесь!
-                            <span>
-                              Осталось:
-                            </span>
-                          </h3>
-                        </div>
-                        <div class="counter-wrapper">
-                          <div class="price-value price-value--hot">
-                            <span class="price-value__old">
-                              52,20 лей
-                            </span>
-                            <span class="price-value__new">
-                              48,00 лей
-                            </span>
+                <div class="hot-slide__wrapper">
+                  <div class="card hot-card">
+                    <div class="card__wrapper">
+                      <span class="card-widjet card-widjet--hit">
+                        HIT
+                      </span>
+                      <span class="card-widjet card-widjet--sale">
+                        20%
+                      </span>
+                      <div class="card-body">
+                        <a href="#" class="card-body__top">
+                          <img src="img/tovar/img3.png" alt="Товар" class="card-body__image">
+                        </a>
+                        <div class="card-body__bottom">
+                          <div class="hot-top">
+                            <h2 class="hot-top__title">
+                              Флэш-ручка стилус 8Gb USB2.0 серябряная
+                            </h2>
+                            <h3 class="hot-top__subtitle">
+                              Поторопитесь!
+                              <span>
+                                Осталось:
+                              </span>
+                            </h3>
                           </div>
-                          <div class="block-counter">
-                            <div class="block-counter__wrapp">
-                              <div class="block-day counter-style">
-                                <span>02</span>
-                              </div>
-                              <p class="сount-value">
-                                Дней
-                              </p>
+                          <div class="counter-wrapper">
+                            <div class="price-value price-value--hot">
+                              <span class="price-value__old">
+                                52,20 лей
+                              </span>
+                              <span class="price-value__new">
+                                48,00 лей
+                              </span>
                             </div>
-                            <div class="block-counter__wrapp">
-                              <div class="block-day counter-style">
-                                <span>05</span>
+                            <div class="block-counter">
+                              <div class="block-counter__wrapp">
+                                <div class="block-day counter-style">
+                                  <span>02</span>
+                                </div>
+                                <p class="сount-value">
+                                  Дней
+                                </p>
                               </div>
-                              <p class="сount-value">
-                                Часов
-                              </p>
-                            </div>
-                            <div class="block-counter__wrapp">
-                              <div class="block-day counter-style">
-                                <span>25</span>
+                              <div class="block-counter__wrapp">
+                                <div class="block-day counter-style">
+                                  <span>05</span>
+                                </div>
+                                <p class="сount-value">
+                                  Часов
+                                </p>
                               </div>
-                              <p class="сount-value">
-                                Минут
-                              </p>
-                            </div>
+                              <div class="block-counter__wrapp">
+                                <div class="block-day counter-style">
+                                  <span>25</span>
+                                </div>
+                                <p class="сount-value">
+                                  Минут
+                                </p>
+                              </div>
 
+                            </div>
                           </div>
                         </div>
+
+
+
                       </div>
-
-
-
                     </div>
                   </div>
                 </div>
+
               </div>
               <div class="hot-slide">
-                <div class="card hot-card">
-                  <div class="card__wrapper">
-                    <span class="card-widjet card-widjet--hit">
-                      HIT
-                    </span>
-                    <span class="card-widjet card-widjet--sale">
-                      20%
-                    </span>
-                    <div class="card-body">
-                      <a href="#" class="card-body__top">
-                        <img src="img/tovar/img.png" alt="Товар" class="card-body__image">
-                      </a>
-                      <div class="card-body__bottom">
-                        <div class="hot-top">
-                          <h2 class="hot-top__title">
-                            Флэш-ручка стилус 8Gb USB2.0 серябряная
-                          </h2>
-                          <h3 class="hot-top__subtitle">
-                            Поторопитесь!
-                            <span>
-                              Осталось:
-                            </span>
-                          </h3>
-                        </div>
-                        <div class="counter-wrapper">
-                          <div class="price-value price-value--hot">
-                            <span class="price-value__old">
-                              52,20 лей
-                            </span>
-                            <span class="price-value__new">
-                              48,00 лей
-                            </span>
+                <div class="hot-slide__wrapper">
+                  <div class="card hot-card">
+                    <div class="card__wrapper">
+                      <span class="card-widjet card-widjet--hit">
+                        HIT
+                      </span>
+                      <span class="card-widjet card-widjet--sale">
+                        20%
+                      </span>
+                      <div class="card-body">
+                        <a href="#" class="card-body__top">
+                          <img src="img/tovar/img.png" alt="Товар" class="card-body__image">
+                        </a>
+                        <div class="card-body__bottom">
+                          <div class="hot-top">
+                            <h2 class="hot-top__title">
+                              Флэш-ручка стилус 8Gb USB2.0 серябряная
+                            </h2>
+                            <h3 class="hot-top__subtitle">
+                              Поторопитесь!
+                              <span>
+                                Осталось:
+                              </span>
+                            </h3>
                           </div>
-                          <div class="block-counter">
-                            <div class="block-counter__wrapp">
-                              <div class="block-day counter-style">
-                                <span>02</span>
-                              </div>
-                              <p class="сount-value">
-                                Дней
-                              </p>
+                          <div class="counter-wrapper">
+                            <div class="price-value price-value--hot">
+                              <span class="price-value__old">
+                                52,20 лей
+                              </span>
+                              <span class="price-value__new">
+                                48,00 лей
+                              </span>
                             </div>
-                            <div class="block-counter__wrapp">
-                              <div class="block-day counter-style">
-                                <span>05</span>
+                            <div class="block-counter">
+                              <div class="block-counter__wrapp">
+                                <div class="block-day counter-style">
+                                  <span>02</span>
+                                </div>
+                                <p class="сount-value">
+                                  Дней
+                                </p>
                               </div>
-                              <p class="сount-value">
-                                Часов
-                              </p>
-                            </div>
-                            <div class="block-counter__wrapp">
-                              <div class="block-day counter-style">
-                                <span>25</span>
+                              <div class="block-counter__wrapp">
+                                <div class="block-day counter-style">
+                                  <span>05</span>
+                                </div>
+                                <p class="сount-value">
+                                  Часов
+                                </p>
                               </div>
-                              <p class="сount-value">
-                                Минут
-                              </p>
-                            </div>
+                              <div class="block-counter__wrapp">
+                                <div class="block-day counter-style">
+                                  <span>25</span>
+                                </div>
+                                <p class="сount-value">
+                                  Минут
+                                </p>
+                              </div>
 
+                            </div>
                           </div>
                         </div>
+
+
+
                       </div>
-
-
-
                     </div>
                   </div>
                 </div>
+
               </div>
 
             </div>
@@ -2010,7 +2877,7 @@
         </div>
       </div>
     </section>
-    <section class="subscribe-sec">
+    <section class="subscribe-sec subscribe-sec--mode">
       <div class="container">
         <div class="subscribe">
           <div class="subscribe__item">
@@ -2035,6 +2902,17 @@
     </section>
     <section class="brand-sec">
       <div class="container">
+        <div class="all-top">
+          <h2 class="all-top__title">
+            Каталог брендов
+          </h2>
+          <a href="#" class="all-top__link">
+            <span> Смотреть все</span>
+            <svg width="6" height="11">
+              <use href='img/sprite/sprite.svg#main-arrow'></use>
+            </svg>
+          </a>
+        </div>
         <div class="brand">
           <div class="brand-slider">
 
@@ -2098,6 +2976,12 @@
           <h2 class="all-top__title">
             Полезная информация
           </h2>
+          <a href="#" class="all-top__link">
+            <span> Смотреть все</span>
+            <svg width="6" height="11">
+              <use href='img/sprite/sprite.svg#main-arrow'></use>
+            </svg>
+          </a>
         </div>
         <div class="inform">
           <div class="inform-slider inform-slider--flex ">
@@ -2244,185 +3128,200 @@
 
 
           <div class="footer-item">
-            <h3 class="footer-item__title">
+            <h3 class="footer-item__title footer-item__title--mob">
               Информация
             </h3>
-            <ul class="footer-list">
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  О компании
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Вопрос-ответ
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Дилерам
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Услуги
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Доставка и оплата
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Как купить
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Магазины
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Контакты
-                </a>
-              </li>
-            </ul>
+            <div class="footer-list__wrapper">
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    О компании
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Вопрос-ответ
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Дилерам
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Услуги
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Доставка и оплата
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Как купить
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Магазины
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <div class="footer-item">
-            <h3 class="footer-item__title">
+            <h3 class="footer-item__title footer-item__title--mob">
               Полезное
             </h3>
-            <ul class="footer-list">
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Обзоры
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Акции и предложения
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Карта сайта
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Полезная информация
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Новости
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Акции, розыгрыши
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Дисконтные карты
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Бренды
-                </a>
-              </li>
-            </ul>
+            <div class="footer-list__wrapper">
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Обзоры
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Акции и предложения
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Карта сайта
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Полезная информация
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Новости
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Акции, розыгрыши
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Дисконтные карты
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Бренды
+                  </a>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <div class="footer-item">
-            <h3 class="footer-item__title">
+            <h3 class="footer-item__title footer-item__title--mob">
               Для покупателей
             </h3>
-            <ul class="footer-list">
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Моя Корзина
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Войти на сайт
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Зарегистрироваться
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Восстановить пароль
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Помощь
-                </a>
-              </li>
-            </ul>
+            <div class="footer-list__wrapper">
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Моя Корзина
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Войти на сайт
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Зарегистрироваться
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Восстановить пароль
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Помощь
+                  </a>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <div class="footer-item">
-            <h3 class="footer-item__title">
+            <h3 class="footer-item__title footer-item__title--mob">
               Контакты
             </h3>
-            <ul class="footer-list">
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name footer-list__name--height">
-                  <svg width="15" height="20">
-                    <use href='img/sprite/sprite.svg#geo'></use>
-                  </svg>
-                  г. Кишинев, ул. Мирон Костин, 7
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  <svg width="15" height="11">
-                    <use href='img/sprite/sprite.svg#footer-tell'></use>
-                  </svg>
-                  0(22)-808-445
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  <svg width="15" height="14">
-                    <use href='img/sprite/sprite.svg#clock'></use>
-                  </svg>
-                  Пн-Пт: 9:00 - 18:00
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name footer-list__name--mail">
-                  <svg width="15" height="13">
-                    <use href='img/sprite/sprite.svg#mail'></use>
-                  </svg>
-                  market@birovits.md
-                </a>
-              </li>
-            </ul>
-            <h3 class="footer-item__title">
+            <div class="footer-list__wrapper">
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name footer-list__name--height">
+                    <svg width="15" height="20">
+                      <use href='img/sprite/sprite.svg#geo'></use>
+                    </svg>
+                    г. Кишинев, ул. Мирон Костин, 7
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    <svg width="15" height="11">
+                      <use href='img/sprite/sprite.svg#footer-tell'></use>
+                    </svg>
+                    0(22)-808-445
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    <svg width="15" height="14">
+                      <use href='img/sprite/sprite.svg#clock'></use>
+                    </svg>
+                    Пн-Пт: 9:00 - 18:00
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name footer-list__name--mail">
+                    <svg width="15" height="13">
+                      <use href='img/sprite/sprite.svg#mail'></use>
+                    </svg>
+                    market@birovits.md
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <h3 class="footer-item__title footer-item__title--social">
               Социальные сети
             </h3>
-            <a href="#" class="footer-social">
-              <svg width="25" height="24">
-                <use href='img/sprite/sprite.svg#fb'></use>
-              </svg>
-            </a>
-            <a href="#" class="footer-social">
-              <svg width="25" height="24">
-                <use href='img/sprite/sprite.svg#insta'></use>
-              </svg>
-            </a>
+            <div class="footer-list__wrapper footer-list__wrapper--social">
+              <a href="#" class="footer-social">
+                <svg width="25" height="24">
+                  <use href='img/sprite/sprite.svg#fb'></use>
+                </svg>
+              </a>
+              <a href="#" class="footer-social">
+                <svg width="25" height="24">
+                  <use href='img/sprite/sprite.svg#insta'></use>
+                </svg>
+              </a>
+            </div>
+
           </div>
 
         </div>
@@ -2454,6 +3353,55 @@
     </div>
 
   </footer>
+  <div class="mobile-fixed">
+    <a href="#" class="mobile-fixed__item">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix1'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Акции
+      </span>
+    </a>
+
+    <a href="#" class="mobile-fixed__item">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix2'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Сравнения
+      </span>
+    </a>
+
+    <a href="#" class="mobile-fixed__item">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix3'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Чат
+      </span>
+    </a>
+
+    <a href="#" class="mobile-fixed__item cabinet">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix4'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Кабинет
+      </span>
+    </a>
+
+    <a href="#" class="mobile-fixed__item">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix5'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Корзина
+      </span>
+      <span class="mobile-fixed__value">
+        2
+      </span>
+    </a>
+  </div>
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/common.min.js"></script>

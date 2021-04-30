@@ -1,0 +1,131 @@
+.compare-sec {
+  padding-bottom: 100px;
+  .fliter-checkbox>.fliter-checkbox__text::before {
+    width: 24px;
+    height: 25px;
+  }
+}
+
+.compare {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.compare-left {
+  max-width: 270px;
+  width: 100%;
+}
+
+.compare-left__title {
+  margin-bottom: 30px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #072952;
+  white-space: nowrap;
+}
+
+.compare-left__item + .compare-left__item {
+  margin-top: 15px;
+}
+
+.compare-left__item {
+  .fliter-checkbox__text {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #000000;
+  }
+}
+
+.compare-left__link {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration-line: underline;
+  color: #00479B;
+}
+
+.compare-right {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.compare-scroll {
+  overflow-x: scroll;
+  margin-bottom: 92px;
+}
+
+.compare-right__wrapp {
+  position: relative;
+  .card {
+    width: 210px;
+  }
+}
+
+.compare-bottom__coll {
+  flex: 226px 0 0;
+}
+
+.compare-bottom__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #072952;
+  padding-left: 28px;
+}
+
+.compare-bottom__value {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #00479B;
+}
+
+.compare-bottom__row {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 15px 0;
+  border-bottom: 1px solid #EBEEF2;
+  width: 200%;
+}
+
+.compare-bottom {
+  padding-bottom: 35px;
+}
+
+.compare-bottom__btn {
+  background: #FFFFFF;
+  border: 2px solid #00479B;
+  border-radius: 10px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #00479B;
+  width: 170px;
+  height: 40px;
+
+  &--mode {
+    background: #00479B;
+    color: #fff;
+  }
+}
+
+.compare-bottom__buttons {
+  display: flex;
+}
+
+.compare-bottom__btn + .compare-bottom__btn {
+  margin-left: 32px;
+}
+
+
+

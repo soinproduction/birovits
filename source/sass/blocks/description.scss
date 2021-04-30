@@ -30,6 +30,8 @@
   padding: 0;
   padding-left: 10px;
   color: #072952;
+  display: flex;
+  align-items: center;
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.1));
   &:first-of-type {
     border-radius: 10px 0px 0px 10px;
@@ -37,10 +39,11 @@
   &:last-of-type {
     border-radius: 0px 10px 10px 0px;
   }
-  &--active {
-    background: #00479B;
-    color: #fff;
-  }
+}
+
+.tab_active.description__btn {
+  background: #00479B;
+  color: #fff;
 }
 
 .description__text {

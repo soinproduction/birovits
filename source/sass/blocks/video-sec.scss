@@ -27,7 +27,10 @@
   font-weight: bold;
   font-size: 200px;
   line-height: 237px;
-  color: #B31217;
+  background: linear-gradient(180deg, #F85752 0%, #B31217 107.14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -10px;
 }
 
 .error {

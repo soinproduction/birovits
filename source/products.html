@@ -16,6 +16,29 @@
 
 <body>
   <header>
+    <div class="header-mob">
+      <div class="header-mob__item">
+        <div class="hamburger-wrapp">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="header-mob__item">
+        <a href="#" class="header-mob__logo">
+          <img src="img/logo.png" alt="logo" class="header-mob__image">
+        </a>
+      </div>
+      <div class="header-mob__item">
+          <a href="#" class="header-mob__search">
+            <svg width="22" height="22">
+              <use href="img/sprite/sprite.svg#search"></use>
+            </svg>
+          </a>
+      </div>
+    </div>
     <div class="header-top">
       <div class="container">
         <div class="header-top__box">
@@ -339,17 +362,17 @@
 
               <div class="product-card__middle">
                 <div class="icon-wrapper">
-                  <button class="icon-wrapper__btn like-btn">
-                    <svg width="22" height="20">
-                      <use href='img/sprite/sprite.svg#like'></use>
+                  <button class="icon-wrapper__btn">
+                    <svg width="20" height="20">
+                      <use href='img/sprite/sprite.svg#copy'></use>
                     </svg>
                   </button>
                   <span class="icon-wrapper__text">Сравнить</span>
                 </div>
                 <div class="icon-wrapper">
-                  <button class="icon-wrapper__btn">
-                    <svg width="20" height="20">
-                      <use href='img/sprite/sprite.svg#copy'></use>
+                  <button class="icon-wrapper__btn like-btn">
+                    <svg width="22" height="20">
+                      <use href='img/sprite/sprite.svg#like'></use>
                     </svg>
                   </button>
                   <span class="icon-wrapper__text">В избранное</span>
@@ -371,13 +394,13 @@
                     <img src="img/prod/big.png" alt="tovar" class="product-select__prod">
                   </div>
                   <div class="product-select__box">
-                    <img src="img/prod/big.png" alt="tovar" class="product-select__prod">
+                    <img src="img/prod/big2.png" alt="tovar" class="product-select__prod">
                   </div>
                   <div class="product-select__box">
-                    <img src="img/prod/big.png" alt="tovar" class="product-select__prod">
+                    <img src="img/prod/big3.png" alt="tovar" class="product-select__prod">
                   </div>
                   <div class="product-select__box">
-                    <img src="img/prod/big.png" alt="tovar" class="product-select__prod">
+                    <img src="img/prod/big4.png" alt="tovar" class="product-select__prod">
                   </div>
                 </div>
 
@@ -456,9 +479,12 @@
                       экономия 5 лей
                     </span>
                   </div>
-                  <span class="price-value__new">
-                    48,00 лей
-                  </span>
+                  <p class="price-value__new">
+                    48 лей
+                    <span class="price-value__new--mobile">
+                      / 1 шт.
+                    </span>
+                  </p>
                 </div>
                 <div class="counter-wrapper">
                   <div class="block-count">
@@ -493,18 +519,125 @@
         </div>
         <div class="description">
           <div class="description__buttons">
-            <button class="description__btn description__btn--active">
+            <a href="#tab1" class="description__btn description__btn--active tab tab_active">
               Описание
-            </button>
-            <button class="description__btn">
+            </a>
+            <a href="#tab2" class="description__btn tab">
               Характеристики
-            </button>
+            </a>
           </div>
-          <p class="description__text">
+          <p class="description__text tab-section  tabs-content--active" id="tab1" >
             Пароочиститель SC 4 Iron нового поколения, оснащен съемным бачком для воды, обеспечивает непрерывную работу и экологически безопасную уборку больших площадей. SC 4 Iron можно гладить, подключив паровой утюг.
             <br><br>
             Паровой очиститель SC 4 Iron очищает совсем без химии и предназначен для универсального использования. В бачок для чистой воды емкостью 0,8 л можно постоянно доливать воду, что позволяет работать без перерыва. Аппарат идеально подходит для чистки твердых полов, например, в ванной комнате или на кухне. Оптимизированная насадка для пола имеет систему быстрой замены салфетки, позволяет не пачкать руки. Окна, душевые кабины, стекло, арматура, кафель, плитка, стыки, варочные панели или вытяжные колпаки — SC 4 Iron везде создаст блестящую чистоту. При максимальном давлении пара 3,5 бар интенсивно и безвредно для окружающей среды удаляется старая грязь, известковые и жировые отложения. Электрический кабель компактно размещается в специальном отделении.SC 4 Iron имеет предохранительный клапан, который препятствует открыванию аппарата под давлением. Как и все парогенераторы фирмы Kärcher, этот аппарат отвечает высоким стандартам качества и безопасности. Кроме того, аппаратом SC 4 Iron можно гладить. Для этого в розетку на корпусе подключается утюг и выбирается периодическая или длительная подача пара. Постоянного высокого давления пара достаточно для того, чтобы гладить даже очень плотные вещи только с одной стороны. Это экономит до 50% времени на глажку.
           </p>
+          <div id="tab2" class="description__list tab-section">
+            <ul class="description-list">
+              <li class="description-list__item">
+                <p class="description-list__text">
+                  <b>
+                    Время нагрева
+                  </b>
+                </p>
+                <p class="description-list__text">
+                  4 мин
+                </p>
+              </li>
+              <li class="description-list__item">
+                <p class="description-list__text">
+                  <b>
+                    Мощность нагревателя
+                  </b>
+                </p>
+                <p class="description-list__text">
+                  2000 Вт
+                </p>
+              </li>
+              <li class="description-list__item">
+                <p class="description-list__text">
+                  <b>
+                    Время нагрева
+                  </b>
+                </p>
+                <p class="description-list__text">
+                  4 мин
+                </p>
+              </li>
+              <li class="description-list__item">
+                <p class="description-list__text">
+                  <b>
+                    Мощность нагревателя
+                  </b>
+                </p>
+                <p class="description-list__text">
+                  2000 Вт
+                </p>
+              </li>
+              <li class="description-list__item">
+                <p class="description-list__text">
+                  <b>
+                    Время нагрева
+                  </b>
+                </p>
+                <p class="description-list__text">
+                  4 мин
+                </p>
+              </li>
+            </ul>
+
+            <ul class="description-list">
+              <li class="description-list__item">
+                <p class="description-list__text">
+                  <b>
+                    Время нагрева
+                  </b>
+                </p>
+                <p class="description-list__text">
+                  4 мин
+                </p>
+              </li>
+              <li class="description-list__item">
+                <p class="description-list__text">
+                  <b>
+                    Мощность нагревателя
+                  </b>
+                </p>
+                <p class="description-list__text">
+                  2000 Вт
+                </p>
+              </li>
+              <li class="description-list__item">
+                <p class="description-list__text">
+                  <b>
+                    Время нагрева
+                  </b>
+                </p>
+                <p class="description-list__text">
+                  4 мин
+                </p>
+              </li>
+              <li class="description-list__item">
+                <p class="description-list__text">
+                  <b>
+                    Мощность нагревателя
+                  </b>
+                </p>
+                <p class="description-list__text">
+                  2000 Вт
+                </p>
+              </li>
+              <li class="description-list__item">
+                <p class="description-list__text">
+                  <b>
+                    Время нагрева
+                  </b>
+                </p>
+                <p class="description-list__text">
+                  4 мин
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -1107,185 +1240,200 @@
 
 
           <div class="footer-item">
-            <h3 class="footer-item__title">
+            <h3 class="footer-item__title footer-item__title--mob">
               Информация
             </h3>
-            <ul class="footer-list">
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  О компании
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Вопрос-ответ
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Дилерам
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Услуги
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Доставка и оплата
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Как купить
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Магазины
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Контакты
-                </a>
-              </li>
-            </ul>
+            <div class="footer-list__wrapper">
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    О компании
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Вопрос-ответ
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Дилерам
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Услуги
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Доставка и оплата
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Как купить
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Магазины
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <div class="footer-item">
-            <h3 class="footer-item__title">
+            <h3 class="footer-item__title footer-item__title--mob">
               Полезное
             </h3>
-            <ul class="footer-list">
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Обзоры
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Акции и предложения
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Карта сайта
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Полезная информация
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Новости
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Акции, розыгрыши
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Дисконтные карты
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Бренды
-                </a>
-              </li>
-            </ul>
+            <div class="footer-list__wrapper">
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Обзоры
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Акции и предложения
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Карта сайта
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Полезная информация
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Новости
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Акции, розыгрыши
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Дисконтные карты
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Бренды
+                  </a>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <div class="footer-item">
-            <h3 class="footer-item__title">
+            <h3 class="footer-item__title footer-item__title--mob">
               Для покупателей
             </h3>
-            <ul class="footer-list">
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Моя Корзина
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Войти на сайт
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Зарегистрироваться
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Восстановить пароль
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Помощь
-                </a>
-              </li>
-            </ul>
+            <div class="footer-list__wrapper">
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Моя Корзина
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Войти на сайт
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Зарегистрироваться
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Восстановить пароль
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Помощь
+                  </a>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <div class="footer-item">
-            <h3 class="footer-item__title">
+            <h3 class="footer-item__title footer-item__title--mob">
               Контакты
             </h3>
-            <ul class="footer-list">
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name footer-list__name--height">
-                  <svg width="15" height="20">
-                    <use href='img/sprite/sprite.svg#geo'></use>
-                  </svg>
-                  г. Кишинев, ул. Мирон Костин, 7
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  <svg width="15" height="11">
-                    <use href='img/sprite/sprite.svg#footer-tell'></use>
-                  </svg>
-                  0(22)-808-445
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  <svg width="15" height="14">
-                    <use href='img/sprite/sprite.svg#clock'></use>
-                  </svg>
-                  Пн-Пт: 9:00 - 18:00
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name footer-list__name--mail">
-                  <svg width="15" height="13">
-                    <use href='img/sprite/sprite.svg#mail'></use>
-                  </svg>
-                  market@birovits.md
-                </a>
-              </li>
-            </ul>
-            <h3 class="footer-item__title">
+            <div class="footer-list__wrapper">
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name footer-list__name--height">
+                    <svg width="15" height="20">
+                      <use href='img/sprite/sprite.svg#geo'></use>
+                    </svg>
+                    г. Кишинев, ул. Мирон Костин, 7
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    <svg width="15" height="11">
+                      <use href='img/sprite/sprite.svg#footer-tell'></use>
+                    </svg>
+                    0(22)-808-445
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    <svg width="15" height="14">
+                      <use href='img/sprite/sprite.svg#clock'></use>
+                    </svg>
+                    Пн-Пт: 9:00 - 18:00
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name footer-list__name--mail">
+                    <svg width="15" height="13">
+                      <use href='img/sprite/sprite.svg#mail'></use>
+                    </svg>
+                    market@birovits.md
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <h3 class="footer-item__title footer-item__title--social">
               Социальные сети
             </h3>
-            <a href="#" class="footer-social">
-              <svg width="25" height="24">
-                <use href='img/sprite/sprite.svg#fb'></use>
-              </svg>
-            </a>
-            <a href="#" class="footer-social">
-              <svg width="25" height="24">
-                <use href='img/sprite/sprite.svg#insta'></use>
-              </svg>
-            </a>
+            <div class="footer-list__wrapper footer-list__wrapper--social">
+              <a href="#" class="footer-social">
+                <svg width="25" height="24">
+                  <use href='img/sprite/sprite.svg#fb'></use>
+                </svg>
+              </a>
+              <a href="#" class="footer-social">
+                <svg width="25" height="24">
+                  <use href='img/sprite/sprite.svg#insta'></use>
+                </svg>
+              </a>
+            </div>
+
           </div>
 
         </div>
@@ -1317,6 +1465,55 @@
     </div>
 
   </footer>
+  <div class="mobile-fixed">
+    <a href="#" class="mobile-fixed__item">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix1'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Акции
+      </span>
+    </a>
+
+    <a href="#" class="mobile-fixed__item">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix2'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Сравнения
+      </span>
+    </a>
+
+    <a href="#" class="mobile-fixed__item">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix3'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Чат
+      </span>
+    </a>
+
+    <a href="#" class="mobile-fixed__item">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix4'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Кабинет
+      </span>
+    </a>
+
+    <a href="#" class="mobile-fixed__item">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix5'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Корзина
+      </span>
+      <span class="mobile-fixed__value">
+        2
+      </span>
+    </a>
+  </div>
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/JqUi.js"></script>
   <script src="js/jqTouch.js"></script>

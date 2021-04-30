@@ -16,6 +16,29 @@
 
 <body>
   <header>
+    <div class="header-mob">
+      <div class="header-mob__item">
+        <div class="hamburger-wrapp">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="header-mob__item">
+        <a href="#" class="header-mob__logo">
+          <img src="img/logo.png" alt="logo" class="header-mob__image">
+        </a>
+      </div>
+      <div class="header-mob__item">
+          <a href="#" class="header-mob__search">
+            <svg width="22" height="22">
+              <use href="img/sprite/sprite.svg#search"></use>
+            </svg>
+          </a>
+      </div>
+    </div>
     <div class="header-top">
       <div class="container">
         <div class="header-top__box">
@@ -207,7 +230,7 @@
     </div>
   </header>
   <main>
-    <section class="account-sec">
+    <section class="account-sec account-sec--profile">
       <div class="container">
         <div class="whish-box">
           <aside class="aside">
@@ -300,7 +323,7 @@
                   </span>
                   <input type="text" placeholder="Корчевой" class="account-form__input">
                 </label>
-                <label class="account-form__label" for="#">
+                <label class="account-form__label account-form__label--order" for="#">
                   <span class="account-form__legend">
                     Дата рождения
                   </span>
@@ -310,15 +333,15 @@
                   <span class="account-form__legend">
                     Номер телефона
                   </span>
-                  <input type="tel" class="account-form__input account-form__input--tell" placeholder="+373 (__) ___ ___">
-                  <svg width="18" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.6 8.7a16 16 0 006.6 7.3l2.2-2.5a1 1 0 011-.2c1.2.4 2.3.6 3.6.6.3 0 .5.1.7.3.2.2.3.5.3.8v3.9c0 .3-.1.6-.3.8a1 1 0 01-.7.3c-4.5 0-8.8-2-12-5.5A20 20 0 010 1C0 .8.1.5.3.3.5.1.7 0 1 0h3.5c.3 0 .5.1.7.3.2.2.3.5.3.8 0 1.4.2 2.7.6 4 0 .4 0 .8-.3 1.1L3.6 8.7z" fill="#D4D4D4"/></svg>
+                  <input type="tel" class="account-form__input account-form__input--tell" placeholder="+373 61 011 187">
+                  <svg width="18" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.6 8.7a16 16 0 006.6 7.3l2.2-2.5a1 1 0 011-.2c1.2.4 2.3.6 3.6.6.3 0 .5.1.7.3.2.2.3.5.3.8v3.9c0 .3-.1.6-.3.8a1 1 0 01-.7.3c-4.5 0-8.8-2-12-5.5A20 20 0 010 1C0 .8.1.5.3.3.5.1.7 0 1 0h3.5c.3 0 .5.1.7.3.2.2.3.5.3.8 0 1.4.2 2.7.6 4 0 .4 0 .8-.3 1.1L3.6 8.7z" fill="#072952"/></svg>
                 </label>
               </form>
             </div>
 
             <div class="account-body">
               <h2 class="account-body__title">
-                Контактная информация
+                Безопасность
               </h2>
               <form action="#" class="account-form">
                 <label class="account-form__label account-form__label--mail" for="#">
@@ -403,185 +426,200 @@
 
 
           <div class="footer-item">
-            <h3 class="footer-item__title">
+            <h3 class="footer-item__title footer-item__title--mob">
               Информация
             </h3>
-            <ul class="footer-list">
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  О компании
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Вопрос-ответ
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Дилерам
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Услуги
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Доставка и оплата
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Как купить
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Магазины
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Контакты
-                </a>
-              </li>
-            </ul>
+            <div class="footer-list__wrapper">
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    О компании
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Вопрос-ответ
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Дилерам
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Услуги
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Доставка и оплата
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Как купить
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Магазины
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <div class="footer-item">
-            <h3 class="footer-item__title">
+            <h3 class="footer-item__title footer-item__title--mob">
               Полезное
             </h3>
-            <ul class="footer-list">
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Обзоры
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Акции и предложения
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Карта сайта
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Полезная информация
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Новости
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Акции, розыгрыши
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Дисконтные карты
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Бренды
-                </a>
-              </li>
-            </ul>
+            <div class="footer-list__wrapper">
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Обзоры
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Акции и предложения
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Карта сайта
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Полезная информация
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Новости
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Акции, розыгрыши
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Дисконтные карты
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Бренды
+                  </a>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <div class="footer-item">
-            <h3 class="footer-item__title">
+            <h3 class="footer-item__title footer-item__title--mob">
               Для покупателей
             </h3>
-            <ul class="footer-list">
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Моя Корзина
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Войти на сайт
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Зарегистрироваться
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Восстановить пароль
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  Помощь
-                </a>
-              </li>
-            </ul>
+            <div class="footer-list__wrapper">
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Моя Корзина
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Войти на сайт
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Зарегистрироваться
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Восстановить пароль
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    Помощь
+                  </a>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <div class="footer-item">
-            <h3 class="footer-item__title">
+            <h3 class="footer-item__title footer-item__title--mob">
               Контакты
             </h3>
-            <ul class="footer-list">
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name footer-list__name--height">
-                  <svg width="15" height="20">
-                    <use href='img/sprite/sprite.svg#geo'></use>
-                  </svg>
-                  г. Кишинев, ул. Мирон Костин, 7
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  <svg width="15" height="11">
-                    <use href='img/sprite/sprite.svg#footer-tell'></use>
-                  </svg>
-                  0(22)-808-445
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name">
-                  <svg width="15" height="14">
-                    <use href='img/sprite/sprite.svg#clock'></use>
-                  </svg>
-                  Пн-Пт: 9:00 - 18:00
-                </a>
-              </li>
-              <li class="footer-list__item">
-                <a href="#" class="footer-list__name footer-list__name--mail">
-                  <svg width="15" height="13">
-                    <use href='img/sprite/sprite.svg#mail'></use>
-                  </svg>
-                  market@birovits.md
-                </a>
-              </li>
-            </ul>
-            <h3 class="footer-item__title">
+            <div class="footer-list__wrapper">
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name footer-list__name--height">
+                    <svg width="15" height="20">
+                      <use href='img/sprite/sprite.svg#geo'></use>
+                    </svg>
+                    г. Кишинев, ул. Мирон Костин, 7
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    <svg width="15" height="11">
+                      <use href='img/sprite/sprite.svg#footer-tell'></use>
+                    </svg>
+                    0(22)-808-445
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name">
+                    <svg width="15" height="14">
+                      <use href='img/sprite/sprite.svg#clock'></use>
+                    </svg>
+                    Пн-Пт: 9:00 - 18:00
+                  </a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#" class="footer-list__name footer-list__name--mail">
+                    <svg width="15" height="13">
+                      <use href='img/sprite/sprite.svg#mail'></use>
+                    </svg>
+                    market@birovits.md
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <h3 class="footer-item__title footer-item__title--social">
               Социальные сети
             </h3>
-            <a href="#" class="footer-social">
-              <svg width="25" height="24">
-                <use href='img/sprite/sprite.svg#fb'></use>
-              </svg>
-            </a>
-            <a href="#" class="footer-social">
-              <svg width="25" height="24">
-                <use href='img/sprite/sprite.svg#insta'></use>
-              </svg>
-            </a>
+            <div class="footer-list__wrapper footer-list__wrapper--social">
+              <a href="#" class="footer-social">
+                <svg width="25" height="24">
+                  <use href='img/sprite/sprite.svg#fb'></use>
+                </svg>
+              </a>
+              <a href="#" class="footer-social">
+                <svg width="25" height="24">
+                  <use href='img/sprite/sprite.svg#insta'></use>
+                </svg>
+              </a>
+            </div>
+
           </div>
 
         </div>
@@ -613,6 +651,55 @@
     </div>
 
   </footer>
+  <div class="mobile-fixed">
+    <a href="#" class="mobile-fixed__item">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix1'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Акции
+      </span>
+    </a>
+
+    <a href="#" class="mobile-fixed__item">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix2'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Сравнения
+      </span>
+    </a>
+
+    <a href="#" class="mobile-fixed__item">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix3'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Чат
+      </span>
+    </a>
+
+    <a href="#" class="mobile-fixed__item">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix4'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Кабинет
+      </span>
+    </a>
+
+    <a href="#" class="mobile-fixed__item">
+      <svg width="22" height="23">
+        <use href='img/sprite/sprite.svg#fix5'></use>
+      </svg>
+      <span class="mobile-fixed__name">
+        Корзина
+      </span>
+      <span class="mobile-fixed__value">
+        2
+      </span>
+    </a>
+  </div>
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/JqUi.js"></script>
   <script src="js/jqTouch.js"></script>

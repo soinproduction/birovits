@@ -1,3 +1,45 @@
+const cards = document.querySelectorAll('.card');
+
+const compare = document.querySelector('.compare-right');
+const compareCards = compare && compare.querySelectorAll('.card');
+
+const item = document.querySelectorAll('.footer-item__title--mob');
+const itemWrapper = document.querySelectorAll('.footer-list__wrapper');
+
+if (document.documentElement.clientWidth < 992 ) {
+    [...cards].map((card) => card.classList.add('card--liders'));
+    [...item].map((items) => items.classList.add('accordion'));
+    [...itemWrapper].map((itemsWrappers) => itemsWrappers.classList.add('panel'));
+    compareCards && [...compareCards].map((card) => card.classList.remove('card--liders'));
+}
+
+window.addEventListener('resize', () => {
+  if (document.documentElement.clientWidth < 991) {
+    [...cards].map((card) => {
+      !card.classList.contains('card--liders') && card.classList.add('card--liders');
+    });
+    [...item].map((items) => {
+      !items.classList.contains('accordion') && items.classList.add('accordion');
+    });
+    [...itemWrapper].map((itemsWrappers) => {
+      !itemsWrappers.classList.contains('panel') && itemsWrappers.classList.add('panel');
+    });
+    compareCards && [...compareCards].map((card) => card.classList.remove('card--liders'));
+
+  } else {
+    [...cards].map((card) => {
+      card.classList.contains('card--liders') && card.classList.remove('card--liders');
+    });
+    [...item].map((items) => {
+      items.classList.contains('accordion') && items.classList.remove('accordion');
+    });
+    [...itemWrapper].map((itemsWrappers) => {
+      itemsWrappers.classList.contains('panel') && itemsWrappers.classList.remove('panel');
+    });
+  }
+
+});
+
 // -----------------  Слайдера --------------------
 
 const Sliders = {
@@ -18,16 +60,18 @@ const Sliders = {
           },
         },
         {
-          breakpoint: 767,
+          breakpoint: 992,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
             infinite: true,
+            dots: true,
+            arrows:false,
           },
         },
       ],
     },
-    BREAKPOINT: 768,
+    BREAKPOINT: 991,
     CLASSNAME: 'inform-slider--flex',
   },
   NAVBAR: {
@@ -37,6 +81,22 @@ const Sliders = {
       dots: true,
       speed: 500,
       dotsClass: "baner-slider__dots",
+      responsive: [{
+        breakpoint: 1150,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          dots:true,
+        },
+      },
+    ],
     },
     BREAKPOINT: 768,
     CLASSNAME: 'navbar-slider--flex',
@@ -52,7 +112,7 @@ const Sliders = {
       slidesToShow: 1,
     },
     // BREAKPOINT: OFF_SLIDER,
-    CLASSNAME: '',
+    // CLASSNAME: '',
   },
   PROD_SLIDER: {
     ELEMENT: $('.product-slider'),
@@ -84,6 +144,7 @@ const Sliders = {
       prevArrow: $('.product-nav-arrow-left'),
       nextArrow: $('.product-nav-arrow-right'),
       asNavFor: '.product-slider',
+
     },
     // BREAKPOINT: OFF_SLIDER,
     CLASSNAME: '',
@@ -99,6 +160,48 @@ const Sliders = {
       prevArrow: '<div class="novelty-slider-left novelty-slider__button"><img src="img/slider-left.svg" alt="Слайд"></div>',
       nextArrow: '<div class="novelty-slider-right novelty-slider__button"><img src="img/slider-right.svg" alt="Слайд"></div>',
       dotsClass: "baner-slider__dots",
+      responsive: [{
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          dots:true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          // variableWidth: true
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          dots:true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          // variableWidth: true
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          arrows: false,
+          dots:true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          variableWidth: true
+        },
+      },
+    ],
     },
     // BREAKPOINT: OFF_SLIDER,
     CLASSNAME: '',
@@ -115,6 +218,49 @@ const Sliders = {
       prevArrow: '<div class="novelty-slider-left novelty-slider__button"><img src="img/slider-left.svg" alt="Слайд"></div>',
       nextArrow: '<div class="novelty-slider-right novelty-slider__button"><img src="img/slider-right.svg" alt="Слайд"></div>',
       dotsClass: "baner-slider__dots",
+      responsive: [{
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          variableWidth:true,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          dots:false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          rows: 2,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+          dots:false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 2,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          arrows: false,
+          dots:false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 3,
+          infinite: true,
+        },
+      },
+    ],
     },
     // BREAKPOINT: OFF_SLIDER,
     CLASSNAME: '',
@@ -132,6 +278,40 @@ const Sliders = {
       prevArrow: '<div class="novelty-slider-left novelty-slider__button"><img src="img/slider-left.svg" alt="Слайд"></div>',
       nextArrow: '<div class="novelty-slider-right novelty-slider__button"><img src="img/slider-right.svg" alt="Слайд"></div>',
       dotsClass: "baner-slider__dots",
+      responsive: [{
+        breakpoint: 1200,
+        settings: {
+          arrows: false,
+          dots:false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          rows: 2,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+          dots:false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 3,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          arrows: false,
+          dots:false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 3,
+          infinite: true,
+        },
+      },
+    ],
     },
     // BREAKPOINT: OFF_SLIDER,
     CLASSNAME: '',
@@ -148,6 +328,37 @@ const Sliders = {
       prevArrow: '<div class="novelty-slider-left novelty-slider__button"><img src="img/slider-left.svg" alt="Слайд"></div>',
       nextArrow: '<div class="novelty-slider-right novelty-slider__button"><img src="img/slider-right.svg" alt="Слайд"></div>',
       dotsClass: "baner-slider__dots",
+      responsive: [{
+        breakpoint: 1200,
+        settings: {
+          arrows: false,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          rows: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 3,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 3,
+          infinite: true,
+        },
+      },
+    ],
     },
     // BREAKPOINT: OFF_SLIDER,
     CLASSNAME: '',
@@ -261,9 +472,58 @@ $(function () {
 
 // -----------------  Гамбургер  --------------------
 $(".hamburger").click(function (event) {
-  $(".hamburger").toggleClass("hamburger__active"),
-    $(".mobile__menu ").toggleClass("mobile__menu__active");
+  $(".hamburger").toggleClass("hamburge--active"),
+    $(".mobile-menu ").toggleClass("mobile-menu--active");
 });
+
+$('.mobile-menu__button--catalog').click(function(event){
+  $(".mobile-second").addClass("mobile-second--active");
+});
+
+$('.mobile-second__back').click(function(){
+  $(".mobile-second").removeClass("mobile-second--active");
+});
+
+$('.desktop-list__link').click(function(){
+  $(".mobile-third").addClass("mobile-third--active");
+});
+
+$('.mobile-third__back').click(function(){
+  $(".mobile-third").removeClass("mobile-third--active");
+});
+
+$('.mobile-menu__button--categories').click(function(){
+  $(".mobile-categories").addClass("mobile-categories--active");
+});
+
+$('.mobile-categories__back').click(function(){
+  $(".mobile-categories").removeClass("mobile-categories--active");
+});
+
+$('.catalog-btn').click(function(){
+  $(".desktop-list").toggleClass(" desktop-list--active");
+});
+
+$('.cabinet').click(function(){
+  $(".mobile-cabinet").toggleClass("mobile-cabinet--active");
+});
+
+$('.header-mob__search').click(function(){
+  $(".header-mob__items").toggleClass("header-mob__items--active");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ----------------- Аккордион --------------------
 /**
@@ -354,8 +614,8 @@ if (catalogBody !== null) {
   [...likeButtons].map((button) => button.classList.add('like-btn--active'));
 }
 
-// -------------------------------------------------
 
+// -------------------------------------------------
 $(".polzunok-5").slider({
   min: 0,
   max: 500,

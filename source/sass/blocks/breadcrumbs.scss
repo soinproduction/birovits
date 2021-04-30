@@ -52,6 +52,17 @@
   font-weight: bold;
   font-size: 26px;
   color: #072952;
+
+
+
+
+
+
+
+
+
+
+  white-space: nowrap;
 }
 
 .page-top__value {
@@ -79,6 +90,23 @@
 .page-top__left {
   display: flex;
   align-items: center;
+  max-width: 47%;
+  width: 100%;
+  .header-center__input::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .header-center__input {
+    height: 48px;
+    border-radius: 8px;
+  }
+  .header-center__btn {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+  }
 }
 
 .header-center--mode + .blog-select {
